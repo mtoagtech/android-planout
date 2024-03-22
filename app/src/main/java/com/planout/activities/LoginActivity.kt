@@ -250,6 +250,17 @@ class LoginActivity : AppCompatActivity(), ApiResponse, GoogleApiClient.OnConnec
         FirebasenewToken: String
     ) {
         Utility.getCurrentAppVersion(this)
+        val rememberLanguage = Utility.getForm(this, Utility.key.language)
+        var language = ""
+        if(rememberLanguage.isNullOrBlank()){
+            language = "en"
+        }
+        else if(rememberLanguage == "EL"){
+            language = "gr"
+        }
+        else if(rememberLanguage == "EN"){
+            language = "en"
+        }
         val mBuilder = FormBody.Builder()
         mBuilder.add(Utility.key.social_id,personId)
         mBuilder.add(Utility.key.social_type, socialType)
@@ -258,6 +269,8 @@ class LoginActivity : AppCompatActivity(), ApiResponse, GoogleApiClient.OnConnec
         mBuilder.add(Utility.key.name, personName)
         mBuilder.add(Utility.key.email,email)
         mBuilder.add(Utility.key.login_from,"0")
+        mBuilder.add(Utility.key.language,language)
+
         //Log.d("TAG", "callLoginApi: "+strEmail+"..."+strPass+"..."+Utility.device_id+"..."+Utility.fcm_tocken)
         CallApi.callAPi(mBuilder, ApiController.api.social_login, this, Utility.social_login, true, Utility.POST, false)
 

@@ -17,14 +17,14 @@
     <string name="reserve_table">Κάνε  την κράτηση σου</string>
     <string name="instant_notification">Επιβαιβέωση  κράτησης</string>
     <string name="forgot_password">Ξέχασες τον κωδικό σου ;</string>
-    <string name="forgot_password2">Ξεχασα τον κωδικο μου</string>
+    <string name="forgot_password2">Ξέχασες τον κωδικό σου</string>
     <string name="send_link">Send Link</string>
     <string name="reset_pass2">Επαναφορά Κωδικού</string>
     <string name="reset_pass">Επαναφορά Κωδικού</string>
-    <string name="check_your_email">Email Sent</string>
-    <string name="we_have_sent">An email with instructions on how to reset your\npassword has been sent.</string>
+    <string name="check_your_email">Το email έχει αποσταλεί!</string>
+    <string name="we_have_sent">Εχει αποσταλεί εμαίλ  με  οδηγίες  γαι την  \nεπαναφορά  του κωδικού σας.</string>
     <string name="done">Έγινε</string>
-    <string name="did_not_receive">Did not receive the email? check your spam\nfilter, or <font color="#429488"><b>try another email address</b></font></string>
+    <string name="did_not_receive">Δέν έχετε  λάβει κάποιο email ? Ελέγξτε το φάκελο με  τα  \nανεπιθύμητα   ή<font color="#429488"><b> δοκιμάστε  μια διαφορετική  ηλεκτρονική  διεύθυνση</b></font></string>
     <string name="or_continue_with">Συνέχισε  με</string>
     <string name="visitor">Επισκέπτης</string>
     <string name="company">Επιχείρηση</string>
@@ -94,7 +94,7 @@
     <string name="min_1_and_max_5_selections">Απο  1  Μέχρι 5  Επιλογές</string>
     <string name="edit_profile">Επεξεργασία Προφιλ</string>
     <string name="save">Αποθήκευση</string>
-    <string name="explore_and_reserve">Ανακαλυψε και κάνε κράτηση</string>
+    <string name="explore_and_reserve">Ψάξε , Βρές , Κράτησε</string>
     <string name="popular_industries">Διάσημες Κατηγορίες</string>
     <string name="beach_bar">Παραλιακά μπαράκια</string>
     <string name="show_more">Περισσοτερα</string>
@@ -122,7 +122,7 @@
     <string name="privacy_policy">Πολιτική Απορρήτου</string>
     <string name="terms_and_conditions">Όροι και Προϋποθέσεις</string>
     <string name="logout">Αποσύνδεση</string>
-    <string name="allow_notifications">Να  Επιτρεπούν Eιδοποιήσεις </string>
+    <string name="allow_notifications">Να  επιτρέπονται ειδοποιήσεις </string>
     <string name="title_activity_maps">MapsActivity</string>
 
     <string name="select_your_location">Επιλογή Τοποθεσίας</string>
@@ -132,7 +132,7 @@
     <string name="search_city">Search city</string>
     <string name="select_city">Επιλογή Πόλης</string>
     <string name="view_all">Δες τα όλα</string>
-    <string name="decline">Decline</string>
+    <string name="decline">Aππορίφθηκε</string>
     <string name="confirm">Eπιβεβ</string>
     <string name="city">Πόλη</string>
     <string name="industry">Κατηγορία</string>
@@ -233,7 +233,7 @@
     <string name="bottom_more">Περισσ.</string>
 
 
-    <string name="profile_allow_notification">Επιτραπούν  Ειδοποιήσεις</string>
+    <string name="profile_allow_notification">Να  επιτρέπονται ειδοποιήσεις</string>
     <string name="my_reservation">Οι κρατήσεις μου</string>
     <string name="your_reservation">Η κράτηση σου</string>
     <string name="upcoming">Επόμενο</string>

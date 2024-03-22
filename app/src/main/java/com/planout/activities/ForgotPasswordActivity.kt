@@ -60,6 +60,19 @@ class ForgotPasswordActivity : AppCompatActivity(), ApiResponse {
     private fun callForgotApi() {
         val mBuilder = FormBody.Builder()
         mBuilder.add(Utility.key.email, strEmail)
+        val rememberLanguage = Utility.getForm(this, Utility.key.language)
+        var language = ""
+        if(rememberLanguage.isNullOrBlank()){
+            language = "en"
+        }
+        else if(rememberLanguage == "EL"){
+            language = "gr"
+        }
+        else if(rememberLanguage == "EN"){
+            language = "en"
+        }
+        mBuilder.add(Utility.key.language,language)
+
         CallApi.callAPi(mBuilder, ApiController.api.forgot_password, this, Utility.forgot_password, true, Utility.POST, false)
     }
 

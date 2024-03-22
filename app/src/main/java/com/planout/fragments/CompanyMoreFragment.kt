@@ -493,12 +493,25 @@ class CompanyMoreFragment(val activityBase: HomeCompanyActivity) : Fragment(), A
 
     private fun editSubAccountApi(){
         Utility.getCurrentAppVersion(activityBase)
+        val rememberLanguage = Utility.getForm(activityBase, Utility.key.language)
+        var language = ""
+        if(rememberLanguage.isNullOrBlank()){
+            language = "en"
+        }
+        else if(rememberLanguage == "EL"){
+            language = "gr"
+        }
+        else if(rememberLanguage == "EN"){
+            language = "en"
+        }
         val mBuilder = FormBody.Builder()
         mBuilder.add(Utility.key.name, strName)
         mBuilder.add(Utility.key.email, strEmail)
         mBuilder.add(Utility.key.password, strPasword)
         mBuilder.add(Utility.key.confirm_password, strPasword)
         mBuilder.add(Utility.key.login_from,"0")
+        mBuilder.add(Utility.key.language,language)
+
         CallApi.callAPi(mBuilder, ApiController.api.stores_account+"/"+subAccountId, activityBase, Utility.stores_account_edit, true, Utility.PUT, true)
 
     }
@@ -506,12 +519,24 @@ class CompanyMoreFragment(val activityBase: HomeCompanyActivity) : Fragment(), A
 
     private fun createSubAccountApi(){
         Utility.getCurrentAppVersion(activityBase)
+        val rememberLanguage = Utility.getForm(activityBase, Utility.key.language)
+        var language = ""
+        if(rememberLanguage.isNullOrBlank()){
+            language = "en"
+        }
+        else if(rememberLanguage == "EL"){
+            language = "gr"
+        }
+        else if(rememberLanguage == "EN"){
+            language = "en"
+        }
         val mBuilder = FormBody.Builder()
         mBuilder.add(Utility.key.name, strName)
         mBuilder.add(Utility.key.email, strEmail)
         mBuilder.add(Utility.key.password, strPasword)
         mBuilder.add(Utility.key.confirm_password, strPasword)
         mBuilder.add(Utility.key.login_from,"0")
+        mBuilder.add(Utility.key.language,language)
         //Log.d("TAG", "callLoginApi: "+strEmail+"..."+strPass+"..."+Utility.device_id+"..."+Utility.fcm_tocken)
         CallApi.callAPi(mBuilder, ApiController.api.stores_account, activityBase, Utility.stores_account_create, true, Utility.POST, true)
 

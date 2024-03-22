@@ -479,6 +479,17 @@ class RegistrationActivity : AppCompatActivity(), ApiResponse,
 
     private fun callVisitorRegisterApi(FirebasenewToken: String) {
         Utility.getCurrentAppVersion(this)
+        val rememberLanguage = Utility.getForm(this, Utility.key.language)
+        var language = ""
+        if(rememberLanguage.isNullOrBlank()){
+            language = "en"
+        }
+        else if(rememberLanguage == "EL"){
+            language = "gr"
+        }
+        else if(rememberLanguage == "EN"){
+            language = "en"
+        }
         val mBuilder = FormBody.Builder()
         mBuilder.add(Utility.key.name, strName)
         mBuilder.add(Utility.key.email, strEmail)
@@ -487,6 +498,8 @@ class RegistrationActivity : AppCompatActivity(), ApiResponse,
         mBuilder.add(Utility.key.device_id, Utility.device_id)
         mBuilder.add(Utility.key.device_token, FirebasenewToken)
         mBuilder.add(Utility.key.login_from, "0")
+        mBuilder.add(Utility.key.language,language)
+
         CallApi.callAPi(
             mBuilder,
             ApiController.api.register_visitor,
@@ -597,6 +610,17 @@ class RegistrationActivity : AppCompatActivity(), ApiResponse,
 
     private fun callCompanyRegisterApi(FirebasenewToken: String) {
         Utility.getCurrentAppVersion(this)
+        val rememberLanguage = Utility.getForm(this, Utility.key.language)
+        var language = ""
+        if(rememberLanguage.isNullOrBlank()){
+            language = "en"
+        }
+        else if(rememberLanguage == "EL"){
+            language = "gr"
+        }
+        else if(rememberLanguage == "EN"){
+            language = "en"
+        }
         val mBuilder = JSONObject()
         mBuilder.put(Utility.key.name, strName)
         mBuilder.put(Utility.key.email, strEmail)
@@ -610,6 +634,8 @@ class RegistrationActivity : AppCompatActivity(), ApiResponse,
         mBuilder.put(Utility.key.device_id, Utility.device_id)
         mBuilder.put(Utility.key.device_token, FirebasenewToken)
         mBuilder.put(Utility.key.login_from, "0")
+        mBuilder.put(Utility.key.language,language)
+
 //        Log.d("JSON_DATA",mBuilder.toString())
         CallApi.callAPiJson(
             mBuilder,
