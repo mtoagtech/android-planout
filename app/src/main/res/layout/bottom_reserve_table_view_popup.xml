@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_top_round_bottom_drawable"
+        android:backgroundTint="@color/gray_FF_14"
+        android:paddingVertical="@dimen/margin_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reservation"
+                android:layout_marginVertical="@dimen/margin_10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/bold_helvetica_16dp"/>
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:src="@drawable/ic_icon_cancel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtDate"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerDateList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:clipToPadding="false"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDate"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/dateErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/recyclerDateList" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/time"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_30"
+                    app:layout_constraintTop_toBottomOf="@+id/dateErr"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerTimeList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    android:clipToPadding="false"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTime"/>
+                <TextView
+                    android:id="@+id/timeErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/recyclerTimeList" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_F8_48"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/timeErr"/>
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/location"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_30"
+                    app:layout_constraintTop_toBottomOf="@+id/view1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:backgroundTint="@color/gray_FF_0D"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:elevation="@dimen/dimen_4"
+                    android:outlineSpotShadowColor="@color/gray_B2_5B"
+                    android:outlineAmbientShadowColor="@color/gray_B2_5B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLocation">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownWidth="wrap_content"
+                        android:background="@null"
+                        android:minHeight="@dimen/margin_40"
+                        android:dropDownSelector="@drawable/ic_arrow_down"
+                        android:paddingStart="@dimen/margin_10"
+                        android:paddingEnd="@dimen/margin_40"
+                        android:paddingVertical="@dimen/margin_5"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/imgArr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_5"
+                        android:layout_marginEnd="@dimen/margin_15"
+                        android:src="@drawable/ic_arrow_down"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/locErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/linLoc" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_F8_48"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/locErr"/>
+
+                <TextView
+                    android:id="@+id/txtPeople"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/no_of_people"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_50"
+                    app:layout_constraintTop_toBottomOf="@+id/view2"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linPeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:elevation="@dimen/dimen_4"
+                    android:backgroundTint="@color/gray_FF_0D"
+                    android:outlineSpotShadowColor="@color/gray_B2_5B"
+                    android:outlineAmbientShadowColor="@color/gray_B2_5B"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtPeople"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtPeople">
+
+                    <Spinner
+                        android:id="@+id/spinnerPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownWidth="wrap_content"
+                        android:background="@null"
+                        android:minHeight="@dimen/margin_40"
+                        android:minWidth="@dimen/margin_100"
+                        android:dropDownSelector="@drawable/ic_arrow_down"
+                        android:paddingStart="@dimen/margin_10"
+                        android:paddingEnd="@dimen/margin_30"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/imgArrPeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_5"
+                        android:layout_marginEnd="@dimen/margin_15"
+                        android:src="@drawable/ic_arrow_down"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txtType"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/preferred_table"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_50"
+                    app:layout_constraintTop_toBottomOf="@+id/linPeople"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:backgroundTint="@color/gray_FF_0D"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:outlineSpotShadowColor="@color/gray_B2_5B"
+                    android:outlineAmbientShadowColor="@color/gray_B2_5B"
+
+                    android:elevation="@dimen/dimen_4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtType"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtType">
+
+                    <Spinner
+                        android:id="@+id/spinnerType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownWidth="wrap_content"
+                        android:background="@null"
+                        android:minHeight="@dimen/margin_40"
+                        android:minWidth="@dimen/margin_100"
+                        android:dropDownSelector="@drawable/ic_arrow_down"
+                        android:paddingStart="@dimen/margin_10"
+                        android:paddingEnd="@dimen/margin_40"
+                        android:paddingVertical="@dimen/margin_5"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/imgArrType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_5"
+                        android:layout_marginEnd="@dimen/margin_15"
+                        android:src="@drawable/ic_arrow_down"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/txtAgeGroup"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_50"
+                    android:gravity="center"
+                    android:text="Age group"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linType" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linAgeGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:backgroundTint="@color/gray_FF_0D"
+                    android:elevation="@dimen/dimen_4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:outlineAmbientShadowColor="@color/gray_B2_5B"
+
+                    android:outlineSpotShadowColor="@color/gray_B2_5B"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtAgeGroup"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtAgeGroup">
+
+                    <Spinner
+                        android:id="@+id/spinnerAgeGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:dropDownWidth="wrap_content"
+                        android:dropDownSelector="@drawable/ic_arrow_down"
+                        android:minWidth="@dimen/margin_100"
+                        android:minHeight="@dimen/margin_40"
+                        android:paddingVertical="@dimen/margin_5"
+                        android:paddingStart="@dimen/margin_10"
+                        android:paddingEnd="@dimen/margin_40"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgArrAgeGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_15"
+                        android:padding="@dimen/margin_5"
+                        android:src="@drawable/ic_arrow_down"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/txtTableNo"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_50"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Table no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linAgeGroup" />
+                <EditText
+                    android:id="@+id/editTableNo"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:maxLength="3"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="Table no"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    android:textColorHint="@color/gray_96_96"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTableNo" />
+                <TextView
+                    android:id="@+id/tablenoErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="required field *"
+                    android:textColor="@color/app_red"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/editTableNo" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_F8_48"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/tablenoErr"/>
+
+                <TextView
+                    android:id="@+id/txtContact"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/contact_details"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_30"
+                    app:layout_constraintTop_toBottomOf="@+id/view3"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <EditText
+                    android:id="@+id/editName"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/full_name1"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/gray_96_96"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtContact"/>
+                <TextView
+                    android:id="@+id/fullNameErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editName" />
+
+                <EditText
+                    android:id="@+id/editPhone"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/mobile_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="8"
+                    android:textColorHint="@color/gray_96_96"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fullNameErr"/>
+                <TextView
+                    android:id="@+id/phoneErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editPhone" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_F8_48"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneErr"/>
+
+                <TextView
+                    android:id="@+id/txtExtraNote"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/extra_notes"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_30"
+                    app:layout_constraintTop_toBottomOf="@+id/view4"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/linMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtExtraNote">
+
+                    <EditText
+                        android:id="@+id/editMessage"
+                        style="@style/editText_helvetica_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/margin_100"
+                        android:hint="@string/write_here"
+                        android:gravity="start"
+                        android:maxLength="300"
+                        android:textColorHint="@color/gray_96_96"
+                        android:background="@null"
+                        android:paddingHorizontal="@dimen/margin_20"
+                        android:paddingVertical="@dimen/margin_20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linTopic"/>
+
+                    <TextView
+                        android:id="@+id/txtChar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_12dp"
+                        android:textColor="@color/gray_96_96"
+                        android:gravity="end"
+                        android:text="0/300"
+                        android:layout_marginHorizontal="@dimen/margin_10"
+                        app:layout_constraintTop_toBottomOf="@+id/imgTop"
+                        android:layout_marginVertical="@dimen/margin_10"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/msgErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/linMsg" />
+
+                <Button
+                    android:id="@+id/btnConfirmReserve"
+                    style="@style/bold_helvetica_14dp_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_40"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    app:backgroundTint="@color/app_green"
+                    android:text="@string/confirm_reservation"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linMsg"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

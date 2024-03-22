@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tabHome"
+        android:title="Home"
+        android:icon="@drawable/ic_tab_home_on"/>
+    <item
+        android:id="@+id/tabReservation"
+        android:title="Reservation"
+        android:icon="@drawable/ic_tab_reservation"/>
+    <item
+        android:id="@+id/tabNotification"
+        android:title="Notification"
+        android:icon="@drawable/ic_tab_notification"/>
+    <item
+        android:id="@+id/tabProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_tab_profile"/>
+</menu>

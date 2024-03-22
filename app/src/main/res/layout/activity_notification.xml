@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.NotificationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_back"
+            android:layout_marginStart="@dimen/margin_15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="@dimen/margin_15"/>
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            style="@style/bold_helvetica_18dp"
+            android:text="@string/notifications"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/margin_20"
+            app:layout_constraintStart_toEndOf="@+id/imgBack"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewAll"/>
+
+        <TextView
+            android:id="@+id/txtViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/regular_helvetica_16dp"
+            android:text="@string/view_all"
+            android:textColor="@color/app_green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/margin_15"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linNoMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/constHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification_no_data"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:textColor="@color/gray_5B_FF"
+            style="@style/regular_helvetica_16dp"
+            android:text="@string/no_notification_yet"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_EC_13"
+        app:layout_constraintTop_toBottomOf="@+id/constHeader">
+
+        <TextView
+            android:id="@+id/txtNotiCount"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:text="@string/new_notifications"
+            android:singleLine="true"
+            android:layout_marginVertical="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/margin_15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtMarkViewAll"/>
+
+        <TextView
+            android:id="@+id/txtMarkViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/regular_helvetica_16dp"
+            android:text="@string/mark_all_as_read"
+            android:drawableStart="@drawable/ic_new_noti_mark"
+            android:drawablePadding="@dimen/margin_10"
+            android:textColor="@color/app_green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingEnd="@dimen/margin_15"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNewNotify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        app:layout_constraintTop_toBottomOf="@+id/contCount"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constMain"
+    android:background="@color/background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCard"
+        android:layout_width="@dimen/margin_80"
+        android:layout_height="@dimen/margin_70"
+        app:cardCornerRadius="@dimen/margin_4"
+        app:cardElevation="@dimen/margin_0"
+        app:cardBackgroundColor="@color/background_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/margin_1"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginVertical="@dimen/margin_10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/location_map"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        style="@style/regular_helvetica_12dp"
+        android:layout_width="@dimen/margin_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:lineSpacingExtra="@dimen/margin_5"
+        android:text="Socratous 4, limassol 3036, cyprus limassol 3036, cyprus"
+        android:maxLines="2"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        app:layout_constraintEnd_toStartOf="@+id/imgMenu"
+        app:layout_constraintStart_toEndOf="@+id/cardCard"
+        app:layout_constraintTop_toTopOf="@+id/cardCard" />
+
+    <TextView
+        android:id="@+id/txtIndoor"
+        style="@style/regular_helvetica_12dp"
+        android:textSize="@dimen/margin_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:text="@string/indoor"
+        app:backgroundTint="@color/gray_F8_48"
+        android:background="@drawable/bg_round_btn_drawable"
+        android:paddingHorizontal="@dimen/margin_15"
+        android:paddingVertical="@dimen/margin_7"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        app:layout_constraintStart_toEndOf="@+id/cardCard"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress"/>
+
+    <TextView
+        android:id="@+id/txtOutdoor"
+        style="@style/regular_helvetica_12dp"
+        android:textSize="@dimen/margin_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:text="@string/outdoor"
+        app:backgroundTint="@color/gray_F8_48"
+        android:background="@drawable/bg_round_btn_drawable"
+        android:paddingHorizontal="@dimen/margin_15"
+        android:paddingVertical="@dimen/margin_7"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        app:layout_constraintStart_toEndOf="@+id/txtIndoor"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress"/>
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icon_dot_menu"
+        android:paddingVertical="@dimen/margin_5"
+        android:paddingHorizontal="@dimen/margin_10"
+        app:layout_constraintTop_toTopOf="@+id/cardCard"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/viewBtm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/gray_F4_48"
+        app:layout_constraintTop_toBottomOf="@+id/cardCard"
+        android:layout_marginTop="@dimen/margin_15"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

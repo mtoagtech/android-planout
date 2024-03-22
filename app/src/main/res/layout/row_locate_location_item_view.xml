@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_edit_drawable"
+        android:backgroundTint="@color/gray_FF_14"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingVertical="@dimen/margin_7">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_address"
+            app:tint="@color/app_green"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtAddress"
+            style="@style/regular_helvetica_12dp"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_5B"
+            android:layout_marginHorizontal="@dimen/margin_8"
+            android:text="37 Arch. makariou Iii ave 8010, cyprus"
+            android:layout_marginTop="@dimen/margin_2"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintEnd_toStartOf="@+id/btnLocate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnLocate"
+            style="@style/regular_helvetica_14dp"
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:background="@drawable/bg_round_btn_drawable"
+            app:backgroundTint="@color/app_green"
+            android:paddingHorizontal="@dimen/margin_15"
+            android:paddingVertical="@dimen/margin_10"
+            android:text="@string/locate"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

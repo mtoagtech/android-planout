@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateLocationScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/nestedV"
+            tools:context=".activities.AddLocFormActivity" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:src="@drawable/ic_location_flag"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/map"
+            app:layout_constraintEnd_toEndOf="@id/map"
+            app:layout_constraintStart_toStartOf="@id/map"
+            app:layout_constraintTop_toTopOf="@id/map" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgBackHeader"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            app:cardCornerRadius="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_35"
+            android:layout_marginStart="@dimen/margin_15"
+            android:backgroundTint="@color/background_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_icon_back_day_night"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/currentLocation"
+            android:visibility="gone"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            app:cardCornerRadius="@dimen/margin_50"
+            android:layout_marginTop="@dimen/margin_35"
+            android:layout_marginStart="@dimen/margin_15"
+            android:backgroundTint="@color/background_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/map"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_marginEnd="@dimen/margin_15">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_currunt_location"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedV"
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@+id/map"
+            android:layout_marginTop="-20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/margin_10"
+                android:background="@drawable/bg_top_round_bottom_drawable">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    style="@style/bold_helvetica_16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/margin_7"
+                    android:text="@string/select_your_location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtLoc"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_22"
+                    android:lineSpacingExtra="@dimen/margin_7"
+                    android:text="@string/your_location"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+                <LinearLayout
+                    android:id="@+id/radGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_10"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLoc"
+                    android:layout_marginHorizontal="@dimen/margin_20">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/radBtnGPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_12dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:padding="@dimen/margin_10"
+                        android:button="@drawable/checked_on_off_drawable_round_both"
+                        android:text="@string/use_gps_location" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/radBtnManual"
+                        android:layout_width="match_parent"
+                        style="@style/regular_helvetica_12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/margin_10"
+                        android:button="@drawable/checked_on_off_drawable_round_both"
+                        android:text="@string/add_address_manually" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/editLocation"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:drawablePadding="@dimen/margin_15"
+                    android:hint="@string/your_location"
+                    android:imeOptions="actionNext"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_20"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radGrp" />
+                <TextView
+                    android:id="@+id/editLocation2"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:drawableStart="@drawable/ic_location_flag_small"
+                    android:drawablePadding="@dimen/margin_15"
+                    android:hint="@string/your_location"
+                    android:visibility="gone"
+                    android:imeOptions="actionNext"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radGrp" />
+                <TextView
+                    android:id="@+id/locationErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editAddress" />
+
+                <EditText
+                    android:id="@+id/editAddress"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/address"
+                    android:visibility="gone"
+                    android:imeOptions="actionNext"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_20"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editLocation" />
+                <TextView
+                    android:id="@+id/addressErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editAddress" />
+
+                <EditText
+                    android:id="@+id/editArea"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/area"
+                    android:visibility="gone"
+                    android:imeOptions="actionNext"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_20"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addressErr" />
+                <TextView
+                    android:id="@+id/areaErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editArea" />
+
+                <EditText
+                    android:id="@+id/editLat"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginEnd="@dimen/margin_7"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/latitude"
+                    android:visibility="gone"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editLong"
+                    app:layout_constraintTop_toBottomOf="@+id/areaErr" />
+
+                <TextView
+                    android:id="@+id/areaLatErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editLat" />
+
+                <EditText
+                    android:id="@+id/editLong"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/longitude"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:visibility="gone"
+                    android:paddingVertical="@dimen/margin_20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editLat"
+                    app:layout_constraintTop_toBottomOf="@+id/areaErr" />
+
+                <TextView
+                    android:id="@+id/areaLongErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:visibility="gone"
+                    android:text="required field *"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintEnd_toEndOf="@+id/editLong"
+                    app:layout_constraintStart_toStartOf="@+id/editLong"
+                    app:layout_constraintTop_toBottomOf="@id/editLong" />
+
+                <TextView
+                    android:id="@+id/txtSelCity"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginEnd="@dimen/margin_7"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textColor="@color/gray_3A_FF"
+                    android:background="@drawable/bg_3_radius_white_drawable"
+                    android:elevation="@dimen/margin_3"
+                    android:outlineSpotShadowColor="@color/gray_B2_5B"
+                    android:outlineAmbientShadowColor="@color/gray_B2_5B"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:text="@string/save_city"
+                    app:layout_constraintBottom_toBottomOf="@+id/editPostal"
+                    app:layout_constraintEnd_toStartOf="@+id/editPostal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/areaLatErr" />
+                <TextView
+                    android:id="@+id/cityPostalErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/txtSelCity" />
+
+                <EditText
+                    android:id="@+id/editPostal"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_7"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    android:hint="@string/postal_code"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:visibility="invisible"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtSelCity"
+                    app:layout_constraintTop_toBottomOf="@+id/areaLatErr" />
+
+                <TextView
+                    android:id="@+id/txtTable"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="@string/table"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtOutdoor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtOutdoor" />
+                <CheckBox
+                    android:id="@+id/txtOutdoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/day_selector"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textColor="@color/gray_5B_FF"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/outdoor"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSelCity" />
+                <TextView
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    android:text="@string/outdoor"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSelCity" />
+
+                <CheckBox
+                    android:id="@+id/txtIndoor"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/day_selector"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textColor="@color/gray_5B_FF"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    android:text="@string/indoor"
+                    app:layout_constraintEnd_toStartOf="@+id/txtOutdoor"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSelCity" />
+
+                <TextView
+                    android:id="@+id/typeErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/txtOutdoor" />
+
+                <Button
+                    android:id="@+id/saveLocation"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginBottom="@dimen/margin_30"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    android:padding="@dimen/margin_15"
+                    android:text="@string/save_location"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/app_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/typeErr" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

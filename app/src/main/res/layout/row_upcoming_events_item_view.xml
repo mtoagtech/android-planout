@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/gray_FF_14">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/black"
+            app:cardElevation="@dimen/margin_0"
+            app:cardCornerRadius="@dimen/margin_3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_15"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imgRes"
+                android:layout_width="@dimen/margin_130"
+                android:layout_height="@dimen/margin_100"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            style="@style/bold_helvetica_14dp"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            android:text="Ravens music hall limassol"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_5"
+            android:maxLines="2"
+            app:layout_constraintTop_toTopOf="@id/cardImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImg"/>
+
+        <ImageView
+            android:id="@+id/imgAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_address"
+            app:tint="@color/app_green"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_11"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            app:layout_constraintStart_toEndOf="@id/cardImg"/>
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:text="Kennedy avenue, nicosia"
+            android:textColor="@color/gray_5B"
+            android:drawablePadding="@dimen/margin_7"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/margin_12"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgAddress"/>
+
+        <TextView
+            android:id="@+id/txDateTime"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            android:text="Wed, 20 Apr, 10:30 AM"
+            android:textColor="@color/gray_5B"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/margin_7"
+            android:drawableStart="@drawable/ic_icon_date_time"
+            android:drawableTint="@color/app_green"
+            app:layout_constraintTop_toBottomOf="@id/txtAddress"
+            android:layout_marginTop="@dimen/margin_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImg"
+            android:layout_marginBottom="@dimen/dimen_12"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/gray_F4_48"
+            app:layout_constraintTop_toBottomOf="@+id/cardImg"
+            android:layout_marginTop="@dimen/margin_15"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

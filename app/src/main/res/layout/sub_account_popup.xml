@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/margin_350"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/sub_account_bg"
+            android:elevation="@dimen/margin_20"
+            android:outlineSpotShadowColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.500"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/topText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="@string/create"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/close_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="@color/gray_B2"
+                app:cardCornerRadius="360dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:src="@drawable/ic_cross_icon" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topText">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constVisitorForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/nameText"
+                        style="@style/editText_helvetica_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_30"
+                        android:background="@drawable/bg_round_edit_drawable"
+                        android:drawableStart="@drawable/ic_icon_user"
+                        android:drawablePadding="@dimen/margin_17"
+                        android:gravity="center_vertical"
+                        android:hint="@string/full_name2"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapWords"
+                        android:paddingHorizontal="@dimen/margin_20"
+                        android:paddingVertical="@dimen/margin_17"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/nameErr"
+                        style="@style/regular_helvetica_12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="required field *"
+                        android:textColor="@color/app_red"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/nameText" />
+
+                    <EditText
+                        android:id="@+id/emailText"
+                        style="@style/editText_helvetica_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:background="@drawable/bg_round_edit_drawable"
+                        android:drawableStart="@drawable/ic_icon_email"
+                        android:drawablePadding="@dimen/margin_15"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="@dimen/margin_20"
+                        android:paddingVertical="@dimen/margin_17"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nameErr" />
+
+                    <TextView
+                        android:id="@+id/emailErr"
+                        style="@style/regular_helvetica_12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="required field *"
+                        android:textColor="@color/app_red"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/emailText" />
+
+                    <LinearLayout
+                        android:id="@+id/linPassVisitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:background="@drawable/bg_round_edit_drawable"
+                        android:gravity="center_vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emailErr">
+
+                        <EditText
+                            android:id="@+id/passText"
+                            style="@style/editText_helvetica_regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:drawableStart="@drawable/ic_icon_pass"
+                            android:drawablePadding="@dimen/margin_15"
+                            android:hint="@string/password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:paddingHorizontal="@dimen/margin_20"
+                            android:paddingVertical="@dimen/dimen_16" />
+
+                        <ImageView
+                            android:id="@+id/imgEyeOn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_15"
+                            android:padding="@dimen/margin_5"
+                            android:src="@drawable/ic_eye_off" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/passText2"
+                        style="@style/editText_helvetica_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:background="@drawable/bg_round_edit_drawable"
+                        android:drawableStart="@drawable/ic_icon_pass"
+                        android:drawablePadding="@dimen/margin_19"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingHorizontal="@dimen/margin_20"
+                        android:paddingVertical="@dimen/margin_17"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/emailErr" />
+
+                    <TextView
+                        android:id="@+id/passErr"
+                        style="@style/regular_helvetica_12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="required field *"
+                        android:textColor="@color/app_red"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/linPassVisitor" />
+
+                    <Button
+                        android:id="@+id/btnCreateSub"
+                        style="@style/bold_helvetica_14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_40"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bg_round_btn_drawable"
+                        android:padding="@dimen/margin_15"
+                        android:text="@string/create"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/app_green"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/passErr" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

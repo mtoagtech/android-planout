@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/margin_300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_edit_drawable"
+        android:backgroundTint="@color/background_color"
+        android:elevation="@dimen/margin_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/bold_helvetica_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40"
+            android:gravity="center"
+            android:text="@string/working_days_hrs"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linDayTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_40"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtMon"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_weight="0.7"
+                    android:maxLines="1"
+                    android:text="@string/calendar_monday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtMonVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@color/gray_F8_48" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtTue"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_weight="0.7"
+                    android:maxLines="1"
+                    android:text="@string/calendar_tuesday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTueVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@color/gray_F8_48" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtWed"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@string/calendar_wednesday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtWedVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@color/gray_F8_48" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtThu"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:text="@string/calendar_thursday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtThuVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@color/gray_F8_48" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtFri"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:maxLines="1"
+                    android:text="@string/calendar_friday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtFriVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@color/gray_F8_48" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSat"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@string/calendar_saturday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSatVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:background="@color/gray_F8_48" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtSun"
+                    style="@style/regular_helvetica_14dp"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:maxLines="1"
+                    android:text="@string/calendar_sunday"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/regular_helvetica_16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSunVal"
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:text="@string/not_available"
+                    android:textColor="@color/gray_5B"
+                    android:textSize="@dimen/margin_13"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewBtm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@color/gray_F8_48"
+            app:layout_constraintTop_toBottomOf="@+id/linDayTime" />
+
+        <TextView
+            android:id="@+id/txtClose"
+            style="@style/bold_helvetica_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_20"
+            android:text="Close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewBtm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

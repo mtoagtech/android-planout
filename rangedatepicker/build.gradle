@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "29.0.3"
+
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    api 'androidx.constraintlayout:constraintlayout:2.1.2'
+    api "androidx.recyclerview:recyclerview:1.2.1"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+
+tasks.withType(Javadoc) {
+    enabled = false
+}
+
+group = 'com.andrewjapar.rangedatepicker'
+version = '0.3'
+
+ext {
+    bintrayRepo = 'Android'
+    bintrayName = 'CPicker'
+
+    publishedGroupId = this.group
+    libraryName = 'CPicker'
+    artifact = 'rangedatepicker'
+
+    libraryDescription = "A simple responsive vertical date picker for Android, written in kotlin."
+
+    siteUrl = 'https://github.com/andrewjapar/rangedatepicker'
+    gitUrl = 'https://github.com/andrewjapar/rangedatepicker.git'
+    developerConnection = 'https://github.com/andrewjapar/rangedatepicker.git'
+
+    libraryVersion = this.version
+
+    developerId = 'andrewjapar'
+    developerName = 'Andrew Japar'
+    developerEmail = 'andrewjap.dev@gmail.com'
+
+    licenseName = 'MIT'
+    licenseUrl = 'http://www.opensource.org/licenses/mit-license.php'
+    allLicenses = ["MIT"]
+}
+//
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

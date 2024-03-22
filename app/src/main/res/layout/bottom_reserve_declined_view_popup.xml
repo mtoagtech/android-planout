@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_top_round_bottom_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingVertical="@dimen/margin_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/decline_reservation"
+                android:layout_marginVertical="@dimen/margin_10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/bold_helvetica_16dp"/>
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:src="@drawable/ic_icon_cancel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/wrongInfo"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wrong_info"
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round_both"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginVertical="@dimen/margin_5"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/overBook"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_are_over_booked"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round_both"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginVertical="@dimen/margin_5"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkClosed"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_are_close"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round_both"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Button
+                    android:id="@+id/btnDeclined"
+                    style="@style/bold_helvetica_14dp_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    android:text="@string/decline"
+                    app:backgroundTint="@color/app_red" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginBottom="@dimen/margin_30"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/app_green"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

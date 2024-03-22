@@ -1,0 +1,361 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PlanOutAndroid" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+
+    </style>
+
+    <style name="MonthPickerDialogStyle" >
+        <item name="monthBgColor">@color/black</item>
+        <item name="monthBgSelectedColor">@color/white</item>
+        <item name="monthFontColorSelected">@color/black</item>
+        <item name="monthFontColorNormal">@color/white</item>
+        <item name="monthFontColorDisabled">@color/gray_B2_5B</item>
+
+        <item name="headerBgColor">@color/black</item>
+        <item name="headerFontColorSelected">@color/white</item>
+        <item name="headerFontColorNormal">@color/white</item>
+        <item name="headerTitleColor">@color/white</item>
+
+        <item name="dialogActionButtonColor">@color/black_white</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">@color/black_white</item>
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:background">@color/gray_B2_5B</item>
+    </style>
+    <style name="DialogThemeTime" parent="@style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/gray_5B</item>
+        <item name="colorControlNormal">@color/gray_5B</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+    <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+
+    <style name="chipText" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="chipText_bold" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+<!--        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    //-------8dp------//
+    <style name="regular_helvetica_8dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_8</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_8dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_8</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_8dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_8</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_8dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_8</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------10dp------//
+    <style name="regular_helvetica_10dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_10</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_10dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_10</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_10dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_10</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_10dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_10</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------12dp------//
+    <style name="regular_helvetica_12dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_12</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_12dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_12</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_12dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_12</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_12dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_12</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------14dp------//
+    <style name="regular_helvetica_14dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_14dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_14dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_14dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------16dp------//
+    <style name="regular_helvetica_16dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_16</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_16dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_16</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_16dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_16</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_16dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_16</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------18dp------//
+    <style name="regular_helvetica_18dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_18</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_18dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_18</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_18dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_18</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_18dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_18</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------20dp------//
+    <style name="regular_helvetica_20dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_20</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_20dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_20</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_20dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_20</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_20dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_20</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------22dp------//
+    <style name="regular_helvetica_22dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_22</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_22dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_22</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_22dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_22</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_22dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_22</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //-------24dp------//
+    <style name="regular_helvetica_24dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_24</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_24dp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_24</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="regular_helvetica_24dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_24</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="bold_helvetica_24dp_light" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/margin_24</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_5</item>
+        <item name="android:fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name="editText_helvetica_regular" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/margin_14</item>
+        <item name="android:fontFamily">@font/helvetica_regular</item>
+        <item name="android:textColorHint">@color/gray_96</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="theme_tabs">
+        <item name="android:textSize">@dimen/margin_16</item>
+        <item name="fontFamily">@font/helvetica_bold</item>
+        <item name="android:textColor">@color/gray_5B</item>
+    </style>
+
+    <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.PlanOutAndroid">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

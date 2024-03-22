@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_FF_0D"
+    tools:context=".activities.PackageDetailActivity">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"
+        android:elevation="@dimen/margin_5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/includ"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/constMain"
+            android:paddingBottom="@dimen/margin_50"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPackageList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/margin_10"
+                android:clipToPadding="false"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+            <TextView
+                android:id="@+id/txtCouponCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:text="@string/use_coupons"
+                android:drawableStart="@drawable/ic_icon_coupon_percent"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableEnd="@drawable/ic_arrow_fwd"
+                android:background="@drawable/bg_parrot_drawable"
+                android:padding="@dimen/margin_15"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerPackageList"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:text="@string/summary"
+                app:layout_constraintTop_toBottomOf="@+id/txtCouponCode"
+                android:layout_marginTop="@dimen/margin_25"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constraintTop_toBottomOf="@+id/txtSummary">
+
+                <TextView
+                    android:id="@+id/txtPackName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="3 Months package"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtPackVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="€0"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtPackName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtPackName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtTaxName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="TAX"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPackName"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtTaxVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="€0"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtTaxName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtTaxName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtCouponName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="Plan50"
+                    android:visibility="gone"
+                    android:textColor="@color/app_parrot"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableEnd="@drawable/ic_icon_cancel_red"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTaxName"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtCouponVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="-€0"
+                    android:visibility="gone"
+                    android:textColor="@color/app_parrot"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtCouponName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtCouponName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCouponName"/>
+
+                <TextView
+                    android:id="@+id/txtTotalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:textSize="@dimen/margin_15"
+                    android:text="Total"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/view1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtTotalVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:textSize="@dimen/margin_15"
+                    android:text="€0"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtTotalName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtTotalName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTotalName"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txtPayMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:text="@string/select_payment_method"
+                app:layout_constraintTop_toBottomOf="@+id/constPay"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constPayMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/bg_round_edit_drawable"
+                android:backgroundTint="@color/gray_FF_0D"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:elevation="@dimen/margin_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPayMethod">
+
+                <TextView
+                    android:id="@+id/txtSelectMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_payment_method"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:minHeight="@dimen/margin_40"
+                    android:paddingVertical="@dimen/margin_10"
+                    android:paddingStart="@dimen/margin_10"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:paddingEnd="@dimen/margin_10"
+                    android:backgroundTint="@color/gray_FF_14"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:gravity="center_vertical"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/paymentErr"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:text="required field *"
+                android:visibility="gone"
+                android:textColor="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@id/constPayMethod" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkTerms"
+                style="@style/regular_helvetica_14dp"
+                android:textSize="@dimen/margin_13"
+                android:layout_width="@dimen/margin_30"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_15"
+                app:layout_constraintStart_toStartOf="parent"
+                android:button="@drawable/checked_on_off_drawable_round"
+                app:layout_constraintTop_toBottomOf="@+id/paymentErr"/>
+            <TextView
+                android:id="@+id/txtTermsConditions"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textColor="@color/app_green"
+                android:paddingVertical="@dimen/margin_10"
+                android:gravity="center_vertical"
+                android:text="@string/i_accept_terms_and_conditions"
+                app:layout_constraintTop_toTopOf="@+id/checkTerms"
+                app:layout_constraintBottom_toBottomOf="@+id/checkTerms"
+                app:layout_constraintStart_toEndOf="@+id/checkTerms"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_15"/>
+            <TextView
+                android:id="@+id/termsErr"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:text="required field *"
+                android:visibility="gone"
+                android:textColor="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@id/checkTerms" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPaymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/constPayMethod"
+                app:cardElevation="@dimen/margin_5"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/margin_4"
+                android:layout_marginHorizontal="@dimen/margin_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/gray_FF_14">
+
+                    <TextView
+                        android:id="@+id/txtViva"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="JCC"
+                        android:gravity="center_vertical"
+                        android:drawableStart="@drawable/jcc_img"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:layout_marginHorizontal="@dimen/margin_10"
+                        android:drawableEnd="@drawable/ic_icon_arrow_up"
+                        android:minHeight="@dimen/margin_40"
+                        style="@style/regular_helvetica_14dp"
+                        android:textSize="@dimen/margin_13"
+                        android:paddingVertical="@dimen/margin_5" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1"
+                        android:layout_marginHorizontal="@dimen/margin_10"
+                        android:background="@color/gray_F4_48"/>
+                    <TextView
+                        android:id="@+id/txtPaypal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paypal"
+                        android:gravity="center_vertical"
+                        android:drawableStart="@drawable/ic_icon_paypal"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:layout_marginHorizontal="@dimen/margin_10"
+                        android:minHeight="@dimen/margin_40"
+                        style="@style/regular_helvetica_14dp"
+                        android:textSize="@dimen/margin_13"
+                        android:paddingVertical="@dimen/margin_5" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/cardAria"
+                android:layout_marginTop="@dimen/margin_25"
+                android:layout_marginHorizontal="@dimen/margin_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkTerms">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_100"
+                    android:src="@drawable/card"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPay"
+                style="@style/bold_helvetica_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:background="@drawable/bg_round_btn_drawable"
+                app:backgroundTint="@color/app_green"
+                android:padding="@dimen/margin_15"
+                android:text="@string/proceed_to_pay"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardAria" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

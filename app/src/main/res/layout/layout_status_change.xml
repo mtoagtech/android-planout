@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white_black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pendingTxt"
+        style="@style/regular_helvetica_12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="@dimen/margin_5"
+        android:text="@string/pending"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linAgeGroup" />
+
+    <TextView
+        android:id="@+id/confirmedTxt"
+        style="@style/regular_helvetica_12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="@dimen/margin_10"
+        android:text="@string/confirmed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linAgeGroup" />
+
+    <TextView
+        android:id="@+id/declinedTxt"
+        style="@style/regular_helvetica_12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="@dimen/margin_5"
+        android:text="@string/declined"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linAgeGroup" />
+
+
+</LinearLayout>

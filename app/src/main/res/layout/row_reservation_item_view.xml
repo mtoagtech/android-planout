@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:layout_marginVertical="@dimen/margin_5"
+        android:outlineAmbientShadowColor="@color/gray_B2_5B"
+        android:outlineSpotShadowColor="@color/gray_B2_5B"
+        app:cardBackgroundColor="@color/gray_FF_14"
+        app:cardCornerRadius="@dimen/dimen_4"
+        app:cardElevation="@dimen/margin_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/gray_FF_14">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                app:cardCornerRadius="@dimen/margin_3"
+                app:cardElevation="@dimen/margin_0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgRes"
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder_img" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/bold_helvetica_14dp"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="Ravens music hall limassol"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cardImg"
+                app:layout_constraintTop_toTopOf="@id/cardImg" />
+
+            <ImageView
+                android:id="@+id/locIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15"
+                android:drawableTint="@color/gray_B2"
+                android:src="@drawable/ic_icon_address"
+                app:layout_constraintBottom_toBottomOf="@id/txtAddress"
+                app:layout_constraintEnd_toStartOf="@id/txtAddress"
+                app:layout_constraintStart_toEndOf="@id/cardImg"
+                app:layout_constraintTop_toTopOf="@id/txtAddress" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                style="@style/regular_helvetica_14dp"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_7"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingTop="@dimen/margin_3"
+                android:singleLine="true"
+                android:text="Kennedy avenue, nicosia"
+                android:textColor="@color/gray_5B"
+                android:textSize="@dimen/margin_13"
+                app:layout_constraintBottom_toTopOf="@id/txtPeople"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/locIcon"
+                app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+            <TextView
+                android:id="@+id/txtPeople"
+                style="@style/regular_helvetica_14dp"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableStart="@drawable/ic_icon_user_gray"
+                android:drawablePadding="@dimen/margin_7"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="4 People"
+                android:textColor="@color/gray_5B"
+                android:textSize="@dimen/margin_13"
+                app:layout_constraintBottom_toBottomOf="@id/cardImg"
+                app:layout_constraintEnd_toStartOf="@+id/txtType"
+                app:layout_constraintStart_toEndOf="@id/cardImg"
+                app:layout_constraintTop_toBottomOf="@id/txtAddress" />
+
+            <TextView
+                android:id="@+id/txtType"
+                style="@style/regular_helvetica_14dp"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableStart="@drawable/ic_icon_type_gray"
+                android:drawablePadding="@dimen/margin_7"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="@string/indoor"
+                android:textColor="@color/gray_5B"
+                android:textSize="@dimen/margin_13"
+                app:layout_constraintBottom_toBottomOf="@id/cardImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtPeople"
+                app:layout_constraintTop_toBottomOf="@id/txtAddress" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@color/gray_F4_48"
+                app:layout_constraintTop_toBottomOf="@+id/cardImg" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/dimen_12"
+                android:gravity="center_vertical"
+                android:text="● Confirmed"
+                android:paddingBottom="@dimen/margin_10"
+                android:textColor="@color/status_green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+            <TextView
+                android:id="@+id/txDateTime"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/dimen_12"
+                android:drawableStart="@drawable/ic_icon_date_time"
+                android:drawablePadding="@dimen/margin_7"
+                android:drawableTint="@color/black_white"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Wed, 20 Apr, 10:30 AM"
+                android:textSize="@dimen/margin_13"
+                android:paddingBottom="@dimen/margin_10"
+                app:layout_constraintEnd_toStartOf="@+id/txtStatus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/txDateTime" />
+
+            <TextView
+                android:id="@+id/txtRemark"
+                style="@style/regular_helvetica_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_red"
+                android:gravity="center"
+                android:padding="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="@string/we_are_over_booked"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_13"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

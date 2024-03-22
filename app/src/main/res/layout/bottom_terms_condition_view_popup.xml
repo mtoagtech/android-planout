@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_top_round_bottom_drawable"
+        android:backgroundTint="@color/gray_FF_14"
+        android:paddingVertical="@dimen/margin_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions"
+                android:layout_marginVertical="@dimen/margin_10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/bold_helvetica_16dp"/>
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:src="@drawable/ic_icon_cancel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/regular_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam quam nulla porttitor massa id neque. Suscipit tellus mauris a diam maecenas sed enim ut. Lectus magna fringilla urna porttitor rhoncus. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Duis ut diam quam nulla. Turpis egestas sed tempus urna. Cursus mattis.\n\nUllamcorper sit amet risus nullam eget felis. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Volutpat consequat mauris nunc congue.\n\nSed felis eget velit aliquet sagittis. Vestibulum lorem sed risus ultricies. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Rutrum quisque non tellus orci. Laoreet id donec ultrices tincidunt arcu non. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Viverra nam libero justo laoreet sit."
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="@dimen/margin_40"
+                    app:layout_constraintBottom_toTopOf="@+id/btnAccept"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_40"
+                    app:layout_constraintBottom_toTopOf="@+id/btnAccept"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="WebViewLayout" />
+                <Button
+                    android:id="@+id/btnAccept"
+                    style="@style/bold_helvetica_14dp_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_20"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:paddingVertical="@dimen/margin_15"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    app:backgroundTint="@color/app_green"
+                    android:text="@string/i_accept_terms_condition"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

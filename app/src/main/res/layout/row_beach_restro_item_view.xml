@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/margin_320"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@drawable/bg_round_white_drawable"
+        android:elevation="@dimen/margin_10"
+        android:outlineAmbientShadowColor="@color/gray_B2_5B"
+        android:outlineSpotShadowColor="@color/gray_B2_5B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBig"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            app:cardCornerRadius="@dimen/margin_4"
+            app:cardElevation="@dimen/margin_0"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/bannerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_demo1" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSmall"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_marginEnd="@dimen/margin_30"
+            app:cardCornerRadius="@dimen/margin_4"
+            app:cardElevation="@dimen/margin_0"
+            app:layout_constraintBottom_toBottomOf="@+id/cardBig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardBig">
+
+            <ImageView
+                android:id="@+id/storeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_demo11" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/bold_helvetica_14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="Nozomi"
+            app:layout_constraintTop_toBottomOf="@+id/cardBig" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTags"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <ImageView
+            android:id="@+id/locIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15"
+            android:drawableTint="@color/gray_B2"
+            android:src="@drawable/ic_icon_address"
+            app:layout_constraintBottom_toBottomOf="@id/txtAddress"
+            app:layout_constraintEnd_toStartOf="@id/txtAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtAddress" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            style="@style/regular_helvetica_14dp"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/margin_3"
+            android:singleLine="true"
+            android:text="NIce boutique suites hotel, ayia napa"
+            android:textColor="@color/gray_5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/locIcon"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerTags" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/gray_F4_48"
+            app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            android:layout_marginVertical="@dimen/margin_10"
+            android:background="@drawable/bg_round_btn_drawable"
+            android:backgroundTint="@color/gray_F8_48"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/ic_icon_telephone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <ImageView
+            android:id="@+id/imgFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_15"
+            android:layout_marginVertical="@dimen/margin_10"
+            android:background="@drawable/bg_round_btn_drawable"
+            android:backgroundTint="@color/gray_F8_48"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/ic_icon_fav_true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPhone"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+        <TextView
+            android:id="@+id/btnBook"
+            style="@style/regular_helvetica_14dp_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:background="@drawable/bg_round_btn_drawable"
+            android:paddingHorizontal="@dimen/margin_30"
+            android:paddingVertical="@dimen/margin_12"
+            android:text="@string/reserve"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/app_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

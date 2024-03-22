@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.CityListScreen">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"/>
+    <EditText
+        android:id="@+id/edittext_search"
+        style="@style/editText_helvetica_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:background="@drawable/bg_round_edit_drawable"
+        android:drawableStart="@drawable/ic_img_search"
+        android:drawablePadding="@dimen/margin_15"
+        android:hint="@string/search_city"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:paddingHorizontal="@dimen/margin_20"
+        android:paddingVertical="@dimen/margin_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includ" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_city_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginHorizontal="@dimen/margin_15" />
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_search">
+
+        <TextView
+            android:id="@+id/no_data_txt"
+            style="@style/bold_helvetica_14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="No City Found"
+            android:textColor="@color/background_color"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

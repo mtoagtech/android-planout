@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.ContactFormActivity">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/includ"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_30">
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_contact_us"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/margin_50"/>
+
+            <TextView
+                android:id="@+id/txtSelectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textStyle="bold"
+                android:text="@string/please_select_the_topic"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/imgTop"
+                android:layout_marginTop="@dimen/margin_50"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_round_edit_drawable"
+                android:backgroundTint="@color/white_black"
+                android:orientation="horizontal"
+                android:elevation="@dimen/margin_5"
+                android:outlineSpotShadowColor="@color/gray_B2_5B"
+                android:outlineAmbientShadowColor="@color/gray_B2_5B"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSelectTitle">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    android:background="@null"
+                    android:minHeight="@dimen/margin_30"
+                    android:layout_marginLeft="@dimen/margin_2"
+                    android:dropDownSelector="@drawable/ic_arrow_down"
+                    android:paddingVertical="@dimen/margin_5"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/imgEyeOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:src="@drawable/ic_arrow_down"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/topicErr"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:text="required field *"
+                android:visibility="gone"
+                android:textColor="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@id/linTopic" />
+
+            <LinearLayout
+                android:id="@+id/linMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/bg_round_edit_drawable"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topicErr">
+
+                <EditText
+                    android:id="@+id/editMessage"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/margin_100"
+                    android:hint="@string/message"
+                    android:gravity="start"
+                    android:maxLength="300"
+                    android:background="@null"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_20"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linTopic"/>
+
+                <TextView
+                    android:id="@+id/txtChar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_12dp"
+                    android:textColor="@color/gray_5B"
+                    android:gravity="end"
+                    android:text="0/300"
+                    android:layout_marginHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toBottomOf="@+id/imgTop"
+                    android:layout_marginVertical="@dimen/margin_10"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/msgErr"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:text="required field *"
+                android:visibility="gone"
+                android:textColor="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@id/linMsg" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/submit"
+                android:padding="@dimen/margin_15"
+                style="@style/bold_helvetica_14dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_btn_drawable"
+                app:backgroundTint="@color/app_green"
+                app:layout_constraintTop_toBottomOf="@+id/msgErr"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

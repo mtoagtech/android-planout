@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_edit_drawable"
+        android:backgroundTint="@color/gray_F7_33"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:layout_margin="@dimen/margin_5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/day_blue"
+            style="@style/regular_helvetica_14dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:paddingVertical="@dimen/margin_5"
+            android:text="Xxx"
+            android:textColor="@color/gray_5B_FF" />
+
+        <TextView
+            android:id="@+id/date_blue"
+            style="@style/bold_helvetica_18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingHorizontal="@dimen/margin_10"
+            android:paddingVertical="@dimen/margin_5"
+            android:text="00"
+            android:textColor="@color/gray_5B_FF" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/closeView"
+        android:background="@drawable/bg_round_edit_drawable_close"
+        android:layout_margin="@dimen/margin_5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/margin_5"
+            android:text="Close"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:paddingHorizontal="@dimen/margin_5"
+            android:paddingVertical="@dimen/margin_2"
+            android:textSize="@dimen/margin_8"
+            android:background="@drawable/close_back"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

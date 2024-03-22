@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.PaymentOrderDetailActivity">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/includ"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_15"
+                android:background="@drawable/bg_round_edit_green_drawable"
+                android:padding="@dimen/margin_20">
+
+                <TextView
+                    android:id="@+id/txtPackageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="3 months package"
+                    android:textColor="@color/app_green"
+                    android:paddingVertical="@dimen/margin_7"/>
+
+                <TextView
+                    android:id="@+id/txtPackageDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="14 Apr 2022, 6:32 PM"
+                    android:paddingVertical="@dimen/margin_7"
+                    android:textSize="@dimen/margin_13"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:text="@string/payment_method"
+                android:layout_marginTop="@dimen/margin_35"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <TextView
+                android:id="@+id/txtPayType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:text="Paypal"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/gray_E7_48"
+                android:layout_marginTop="@dimen/margin_25"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:text="@string/summary"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/txtPackName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="Months package"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtPackVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="€0"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtPackName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtPackName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtTaxName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="TAX"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPackName"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtTaxVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="€0"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtTaxName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtTaxName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/txtDiscountName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="@string/discount"
+                    android:visibility="gone"
+                    android:textColor="@color/status_green"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTaxName"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtDiscountVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="€0"
+                    android:textColor="@color/status_green"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtDiscountName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtDiscountName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginTop="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDiscountName"/>
+
+                <TextView
+                    android:id="@+id/txtTotalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:textSize="@dimen/margin_15"
+                    android:text="Total"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    app:layout_constraintTop_toBottomOf="@+id/view1"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <TextView
+                    android:id="@+id/txtTotalVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:textSize="@dimen/margin_15"
+                    android:text="€0"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    app:layout_constraintTop_toTopOf="@+id/txtTotalName"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtTotalName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginTop="@dimen/margin_20"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTotalName"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btnDownload"
+                style="@style/bold_helvetica_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_35"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:background="@drawable/bg_round_btn_drawable"
+                app:backgroundTint="@color/app_green"
+                android:padding="@dimen/margin_15"
+                android:text="@string/download"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressAria"
+                android:layout_margin="@dimen/margin_15"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txDownloadStatus"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Download Status" />
+
+                <ProgressBar
+                    android:id="@+id/pbDownloadProgress"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txMbCurrent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0MB"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/txMbTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_weight="1"
+                        android:gravity="end|center"
+                        android:text="0MB"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnViewBrowse"
+                style="@style/bold_helvetica_14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_7"
+                android:layout_marginBottom="@dimen/margin_40"
+                android:background="@drawable/bg_round_btn_drawable"
+                android:padding="@dimen/margin_15"
+                android:text="@string/view_in_browser"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/gray_F5_F5" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

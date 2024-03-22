@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.PaymentHistoryActivity">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"/>
+
+    <TextView
+        android:id="@+id/txtDateRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/regular_helvetica_14dp"
+        android:background="@color/gray_EC_33"
+        android:textSize="@dimen/margin_13"
+        android:text="@string/select_dates"
+        android:singleLine="true"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:paddingVertical="@dimen/margin_15"
+        android:paddingHorizontal="@dimen/margin_20"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/includ"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linNoMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateRange"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_more_reservation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/gray_5B_FF"
+            style="@style/regular_helvetica_16dp"
+            android:text="@string/no_data_found"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPayHistory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateRange"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

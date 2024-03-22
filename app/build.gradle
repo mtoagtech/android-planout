@@ -1,0 +1,214 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+//    id 'org.sonarqube'
+//    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+//    id 'com.github.dcendents.android-maven'
+//    id 'android-maven'
+
+}
+
+//
+//sonarqube {
+//    properties {
+//        property "sonar.projectName", "PlanOut"
+//        property "sonar.projectKey", "com.planout"
+//        property "sonar.host.url", "http://localhost:9000"
+//        property "sonar.language", "java"
+//        property "sonar.sources", "src/main/"
+//        property "sonar.login", "admin"
+//        property "sonar.password", "admin"
+//    }
+//}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.planout"
+        minSdk 23
+        targetSdk 33
+        versionCode 11
+        versionName "1.10"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+configurations {
+    cleanedAnnotations
+    implementation.exclude group: 'org.jetbrains', module: 'annotations'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // picasso image loader
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Glide image loader
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+
+    // firebase crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // Firebase SDK for Google messaging.
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+
+    // okhttp for api
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.4'
+
+    // shimmer loading effect
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+
+    // gif image loader
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+
+    // Animation with intent
+    implementation 'com.github.mohammadatif:Animatoo:master'
+
+    // Animation on click of view
+    implementation('com.github.thekhaeng:pushdown-anim-click:1.1.1')
+            {
+                exclude group: 'com.android.support'
+            }
+
+    // dot indicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    // Custom Toast Like Notification
+    implementation 'com.github.tapadoo:alerter:7.2.4'
+
+    // Chat socket
+    implementation('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    // Google play lib
+    implementation 'com.google.android.gms:play-services-base:18.0.1'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+
+    // OTPView SDK
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx' // kotlin
+
+    // Circle ImageView SDK
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Lottie Animation SDK
+    implementation 'com.airbnb.android:lottie:3.6.1'
+
+    // Google Localtion Service
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+
+    // facebook login
+    implementation 'com.facebook.android:facebook-android-sdk:8.2.0'
+    implementation 'com.facebook.android:facebook-login:latest.release'
+
+    // google plus login
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
+
+    //firebase google login
+    // Import the BoM for the Firebase platform
+    //implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    //implementation 'com.google.firebase:firebase-auth-ktx'
+    // Also declare the dependency for the Google Play services library and specify its version
+    //implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    //flex
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    //toggle
+    implementation 'com.zcw:togglebutton-library:1.0.0'
+
+    //carousel
+    implementation 'com.github.GoodieBag:CarouselPicker:v1.1'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //current location
+    implementation 'com.github.prabhat1707:EasyWayLocation:2.4'
+
+    implementation "com.github.skydoves:balloon:1.4.5"
+
+    //MotionToast
+    implementation 'com.github.Spikeysanju:MotionToast:1.4'
+
+    implementation 'com.erikagtierrez.multiple_media_picker:multiple-media-picker:1.0.5'
+
+    // Scroll View
+    implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
+
+    //month year picker
+    implementation 'com.whiteelephant:monthandyearpicker:1.3.0'
+    //labeled switch
+    implementation 'com.github.angads25:toggle:1.1.0'
+    implementation "com.github.wisnukurniawan:date-time-range-picker-android:1.0.10"
+
+    implementation project(':rangedatepicker')
+    implementation project(':multiple-images-selector')
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //PRDownloader Dependency
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    // Balloon view
+    implementation "com.github.skydoves:balloon:1.3.9"
+    implementation "com.facebook.fresco:fresco:$rootProject.FRESCO_VERSION"
+    // For animated GIF support
+    implementation "com.facebook.fresco:animated-gif:$rootProject.FRESCO_VERSION"
+    // For WebP support, including animated WebP
+    implementation "com.facebook.fresco:webpsupport:$rootProject.FRESCO_VERSION"
+    implementation "com.facebook.fresco:animated-webp:$rootProject.FRESCO_VERSION"
+}

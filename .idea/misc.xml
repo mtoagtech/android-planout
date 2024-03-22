@@ -1,0 +1,611 @@
+<project version="4">
+  <component name="CheckstyleConfigurable">
+    <option name="suppFilterFilename" value="" />
+    <option name="suppCommentFilter" value="false" />
+    <option name="offComment" value="CHECKSTYLE\:OFF" />
+    <option name="onComment" value="CHECKSTYLE\:ON" />
+    <option name="checkFormat" value=".*" />
+    <option name="messageFormat" value="" />
+    <option name="checkCPP" value="true" />
+    <option name="checkC" value="true" />
+    <option name="suppNearbyCommentFilter" value="false" />
+    <option name="snCommentFormat" value="SUPPRESS CHECKSTYLE (\w+)" />
+    <option name="snCheckFormat" value="$1" />
+    <option name="snMessageFormat" value="" />
+    <option name="snInfluenceFormat" value="0" />
+    <option name="snCheckCPP" value="true" />
+    <option name="snCheckC" value="true" />
+    <option name="pathToUserRulesConfiguration" value="" />
+    <option name="pathToJarWithRules" value="" />
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/bg_round_btn_drawable.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/bg_round_edit_drawable.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/bg_round_white_drawable.xml" value="0.127" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/checked_on_off_drawable.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_all_noti_ring.xml" value="0.139" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_arrow_fwd.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_currunt_location.xml" value="0.13" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_fax.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_arrow_down_dark.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_arrow_up.xml" value="0.1405" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_back.xml" value="0.111" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_cancel.xml" value="0.132" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_checked.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_city_label.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_email.xml" value="0.15" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_mobile.xml" value="0.1395" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_rounded_unselect.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_tags.xml" value="0.1875" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_telephone.xml" value="0.1825" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_time_only.xml" value="0.1285" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_type_only.xml" value="0.1285" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_unchecked.xml" value="0.1825" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_user.xml" value="0.1395" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_user_only.xml" value="0.1285" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_icon_viva.xml" value="0.1405" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_img_filter_off.xml" value="0.136" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_about.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_change_password.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_company.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_contact.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_event.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_locations.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_logout.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_payment_history.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_privacy_policy.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_reservation.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_subscrition.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_terems_and_conditions.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_more_working_days_hour.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_new_noti_ring.xml" value="0.139" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_notify_ring.xml" value="0.1305" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_about.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_contact.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_favorite.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_logout.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_notification.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_privacy.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_reservation.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_profile_saved.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_tab_event.xml" value="0.133" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_tab_home.xml" value="0.1495" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable-night/ic_tab_subscription.xml" value="0.133" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/active_dot.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_3_radius_white_drawable.xml" value="0.166" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_blur_black_white_drawable.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_dotted_line_drawable.xml" value="0.166" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_edit_delete_view_drawable.xml" value="0.1335" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_edit_rect_green_drawable.xml" value="0.1345" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_edit_round_drawable.xml" value="0.1595" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_error_view_drawable.xml" value="0.166" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_gradient_trans_black_drawable.xml" value="0.1485" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_home_search_drawable.xml" value="0.144" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_home_top_round_drawable.xml" value="0.137" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_orange_drawable.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_oval_green_drawable.xml" value="0.12" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_parrot_drawable.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_pink_drawable.xml" value="0.1435" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_round_btn_drawable.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_round_edit_drawable.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_round_edit_drawable_close.xml" value="0.1325" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_round_edit_green_drawable.xml" value="0.1415" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_round_type_drawable.xml" value="0.1595" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_round_white_drawable.xml" value="0.1805" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_tags_selected_drawable.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_top_round_bottom_drawable.xml" value="0.137" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bg_top_round_drawable.xml" value="0.1335" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.156" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/checked_on_off_drawable.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/checked_on_off_drawable_round.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/checked_on_off_drawable_round_both.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/day_selector.xml" value="0.179" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/edit_cursor_drawable.xml" value="0.1475" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/error_bg_round_edit_drawable.xml" value="0.188" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_all_noti_ring.xml" value="0.139" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_all_noti_ring_night.xml" value="0.139" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_bg_pack_off.xml" value="0.1735" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_currunt_location.xml" value="0.13" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_eye_off.xml" value="0.163" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_eye_on.xml" value="0.163" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_fax.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_home_noti_dot.xml" value="0.143" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_address.xml" value="0.136" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_arrow_down_dark.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_arrow_down_darkgreen.xml" value="0.1405" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_arrow_up_n.xml" value="0.1405" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_back.xml" value="0.111" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_cancel.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_cancel_red.xml" value="0.1735" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_checked.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_city_label.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_company.xml" value="0.1875" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_coupon_percent.xml" value="0.1735" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_date_only.xml" value="0.1705" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_date_time.xml" value="0.1485" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_email.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_fav_false.xml" value="0.147" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_fav_off.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_fav_true.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_mobile.xml" value="0.1395" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_pass.xml" value="0.148" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_paypal.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_rounded_unselect_n.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_subscription_no.xml" value="0.1735" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_tags.xml" value="0.1875" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_telephone.xml" value="0.1825" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_time_only.xml" value="0.1285" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_type_gray.xml" value="0.136" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_type_only.xml" value="0.1285" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_unchecked.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_unchecked_night.xml" value="0.1825" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_user.xml" value="0.1395" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_user_gray.xml" value="0.136" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_user_only.xml" value="0.1285" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_icon_viva_n.xml" value="0.1405" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_img_filter_off_n.xml" value="0.136" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_img_filter_on.xml" value="0.138" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_img_saved_search.xml" value="0.147" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_about1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_change_password1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_company1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_contact.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_contact1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_event1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_gellery.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_locations1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_logout.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_logout1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_notification.xml" value="0.143" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_payment_history1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_privacy_policy1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_reservation.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_reservation1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_subscrition1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_terems_and_conditions1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_more_working_days_hour1.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_new_noti_ring_night.xml" value="0.139" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_no_data_found.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_notify_clock.xml" value="0.1305" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_notify_ring.xml" value="0.1305" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_about.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_about1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_chang_pass1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_contact.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_contact1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_favorite.xml" value="0.1515" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_favorite1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_logout1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_notification.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_privacy1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_reservation1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_profile_saved1.xml" value="0.1535" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_event.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_event_n.xml" value="0.133" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_event_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_home.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_home_n.xml" value="0.1495" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_home_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_more.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_more_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_notification.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_notification_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_profile.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_profile_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_reservation.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_reservation_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_subscription.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_subscription_n.xml" value="0.133" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_tab_subscription_on.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_warn_icon.xml" value="0.1" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/ic_wrong.xml" value="0.1" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/no_fav_yet.xml" value="0.1655" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/drawable/timing_line.xml" value="0.151" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_add_location.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_add_location_from.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_all_notification.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_business_details.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_change_password.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_city_list_screen.xml" value="0.1222972972972973" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_company_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_company_home_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_company_profile.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_company_work_day_hour.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_contact_form.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_create_location_screen.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_create_new_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_crop_image.xml" value="0.17447916666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_edit_profile.xml" value="0.15520833333333334" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_event_details.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_favorites.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_home_company.xml" value="0.17447916666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_home_visitor.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_informative.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_mail_sent.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_main.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_maps.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_no_internet.xml" value="0.17447916666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_notification.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_package_detail.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_payment_history.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_payment_order_detail.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_photo_gallery.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_registration.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_reserve_table_status.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_reset_failed.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_saved_search.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_see_more.xml" value="0.15104166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_splash.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_upcoming_events.xml" value="0.17239583333333333" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_visitor_photo_gallery.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_visitor_profile.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_visitor_search.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_walkthrough.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/activity_web_view.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/adapter_search_city.xml" value="0.178125" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_coupon_list_view_popup.xml" value="0.12760416666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_create_edit_event_view_popup.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_delete_account_popup_view.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_delete_popup_view.xml" value="0.1828125" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_edit_coupon_popup_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_filter_checkbox_view_popup.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_filter_view_popup.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_reserve_declined_view_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_reserve_table_view_popup.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/bottom_terms_condition_view_popup.xml" value="0.17864583333333334" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/carousel_item_layout.xml" value="0.1824074074074074" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/custom_error_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/custom_new_error_view.xml" value="0.1875" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/custom_success_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/custom_warning_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/datepicker_bottom.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/datepicker_bottom_final.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/event_row_date_month_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_comp_home_confirmed.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_comp_home_declined.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_comp_home_pending.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_company_event.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_company_home.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_company_more.xml" value="0.2286302780638517" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_company_subscription.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_event_past.xml" value="0.19010416666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_event_upcoming.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_first_walk.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_reservation_past.xml" value="0.17447916666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_reservation_upcoming.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_third_walk.xml" value="0.18489583333333334" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_visitor_home.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_visitor_notification.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_visitor_profile.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/fragment_visitor_reservation.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/header_normal_view.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/industry_item_view.xml" value="0.21" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/logout_popup_view.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/popup_edit_delete_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/progress_load.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_beach_restro_item_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_beach_restro_item_view2.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_checked_filter_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_checked_filter_view_round.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_company_confirmed_list_view.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_company_declined_list_view.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_company_pending_list_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_date_month_view.xml" value="0.9" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_day_time_view.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_events_item_view.xml" value="0.3645833333333333" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_favorite_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_gallery_photo_item_view.xml" value="0.17864583333333334" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_home_industry_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_locate_location_item_view.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_location_item_view.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_notification_list_view.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_package_coupon_item_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_package_item_view.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_pay_history_list_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_photos_item_view.xml" value="0.1758974358974359" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_reservation_item_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_saved_search_view.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_subscription_package_item_view.xml" value="0.2934051144010767" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_tags_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_upcoming_events_item_view.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_upcoming_item_view.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_visitor_search_item_view.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/row_visitot_photos_item_view.xml" value="0.17864583333333334" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/show_doanload_progress_view.xml" value="0.1875" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/simple_spinner_dropdown_item.xml" value="0.15046296296296297" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/simple_spinner_dropdown_item2.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/working_days_hrs_popup_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/layout/working_days_hrs_popup_view_new.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/menu/home_menu_visitor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/mipmap-anydpi-v26/ic_planout_logo.xml" value="0.1395" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/mipmap-anydpi-v26/ic_planout_logo_round.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/app/src/main/res/xml/xml.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/Mohit/android-planout/rangedatepicker/src/main/res/drawable/selected_day_bg.xml" value="0.1295" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/bg_round_btn_drawable.xml" value="0.1185" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/bg_round_edit_drawable.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/bg_round_white_drawable.xml" value="0.124" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_arrow_down.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_arrow_fwd.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_eye_off.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_eye_on.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_back.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_calender.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_company.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_date_only.xml" value="0.1625" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_dob.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_dot_menu.xml" value="0.1475" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_email.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_mobile.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_pass.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_telephone.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_icon_user.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_reset_failed.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable-night/ic_reset_success.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/active_dot.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_dotted_line_drawable.xml" value="0.1455" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_orange_drawable.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_round_btn_drawable.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_round_edit_drawable.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_round_white_drawable.xml" value="0.124" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_tags_selected_drawable.xml" value="0.1415" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bg_top_round_bottom_drawable.xml" value="0.124" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.142" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_arrow_down.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_arrow_fwd.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_eye_off.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_eye_on.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_address.xml" value="0.1545" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_back.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_calender.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_cancel.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_company.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_date_only.xml" value="0.1965" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_dob.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_dot_menu.xml" value="0.1475" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_email.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_mobile.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_pass.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_telephone.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_icon_user.xml" value="0.1265" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_img_click.xml" value="0.154" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_img_click2.xml" value="0.2115" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_planout_logo_background.xml" value="0.1545" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_plus_add.xml" value="0.1585" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_reset_failed2.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_reset_success.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/ic_reset_success2.xml" value="0.1505" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/drawable/non_active_dot.xml" value="0.1365" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_all_notification.xml" value="0.18854166666666666" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_business_details.xml" value="0.12291666666666666" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_change_password.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_company_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_company_home_search.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_company_profile.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_contact_form.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_create_new_password.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_favorites.xml" value="0.1675213675213675" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_forgot_password.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_login.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_mail_sent.xml" value="0.13974358974358975" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_photo_gallery.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_registration.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_reserve_table_status.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_reset_failed.xml" value="0.13974358974358975" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_reset_success.xml" value="0.13974358974358975" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_saved_search.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_splash.xml" value="0.14" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_splash2.xml" value="0.1547008547008547" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_visitor_profile.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/activity_walkthrough.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/bottom_delete_account_popup_view.xml" value="0.18" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/bottom_delete_popup_view.xml" value="0.16" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/bottom_filter_view_popup.xml" value="0.16018518518518518" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/bottom_reserve_table_view_popup.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_comp_home_confirmed.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_comp_home_declined.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_comp_home_pending.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_company_home.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_first_walk.xml" value="0.1547008547008547" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_reservation_upcoming.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_visitor_home.xml" value="0.5" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/fragment_visitor_reservation.xml" value="0.12824074074074074" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/header_normal_view.xml" value="0.1452991452991453" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/industry_item_view.xml" value="0.16018518518518518" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/logout_popup_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/progress_load.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_checked_filter_view_round.xml" value="0.16018518518518518" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_company_confirmed_list_view.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_company_declined_list_view.xml" value="0.12824074074074074" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_company_pending_list_view.xml" value="0.12824074074074074" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_date_month_view.xml" value="0.25" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_day_time_view.xml" value="0.67" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_favorite_item_view.xml" value="0.2" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_location_item_view.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_photos_item_view.xml" value="0.13333333333333333" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_saved_search_view.xml" value="0.22" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_tags_item_view.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/row_upcoming_events_item_view.xml" value="0.16018518518518518" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/simple_spinner_dropdown_item.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/simple_spinner_dropdown_item2.xml" value="0.1675925925925926" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/layout/working_days_hrs_popup_view.xml" value="0.12291666666666666" />
+        <entry key="..\:/Android_Projects/MtoagProjects/android-planout/app/src/main/res/mipmap-anydpi-v26/ic_planout_logo.xml" value="0.1545" />
+        <entry key="..\:/Atul Project/PlanOutAndroid/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/bg_round_edit_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_arrow_fwd.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_cross_icon.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_fax.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_icon_back_day_night.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_icon_email.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_icon_fav_false.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_icon_mobile.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_icon_telephone.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_icon_user.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_img_search.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-night/ic_profile_notification.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable-v24/ic_cross_icon.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_gradient_trans_black_drawable.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_home_top_round_drawable.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_orange_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_btn_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_btn_green_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_btn_red_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_edit_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_edit_drawable_close.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_edit_green_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_edit_unselect_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_type_drawable.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_round_white_drawable.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_tags_selected_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/bg_top_round_bottom_drawable.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/close_back.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/day_selector.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_bg_pack_off.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_fax.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_group_5078.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_address.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_back_day_night.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_city_label.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_company.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_email.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_fav_day_night.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_fav_false.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_mobile.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_pass.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_telephone.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_icon_user.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_img_search.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_location_flag_small.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_more_company.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_more_event.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_more_locations.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_no_data_found.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/ic_profile_notification.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/rounded_green_image_back.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/timing_line.xml" value="0.1235" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/drawable/view_back_with_round_corner.xml" value="0.1325" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_add_location.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_all_notification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_business_details.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_change_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_city_list_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_company_edit_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_company_home_search.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_company_profile.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_company_work_day_hour.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_contact_form.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_create_location_screen.xml" value="0.19010416666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_edit_profile.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_event_details.xml" value="0.18611111111111112" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_favorites.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_home_visitor.xml" value="0.18611111111111112" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_mail_sent.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_no_internet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_notification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_package_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_payment_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_payment_order_detail.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_photo_gallery.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_reserve_table_status.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_reset_failed.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_reset_success.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_saved_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_see_more.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_visitor_photo_gallery.xml" value="0.1" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_visitor_profile.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/activity_visitor_search.xml" value="0.2" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/adapter_search_city.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_coupon_list_view_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_create_edit_event_view_popup.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_delete_account_popup_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_delete_popup_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_filter_checkbox_view_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_filter_view_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_reserve_declined_view_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_reserve_table_view_popup.xml" value="0.22" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/bottom_terms_condition_view_popup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/datepicker_bottom.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/event_row_date_month_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_comp_home_pending.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_company_event.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_company_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_company_more.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_company_subscription.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_event_past.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_event_upcoming.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_reservation_past.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_reservation_upcoming.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_visitor_home.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_visitor_notification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_visitor_profile.xml" value="0.2" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/fragment_visitor_reservation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/header_normal_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/industry_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/logout_popup_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/popup_edit_delete_view.xml" value="0.10989583333333333" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/progress_load.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_beach_restro_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_checked_filter_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_company_confirmed_list_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_company_declined_list_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_company_pending_list_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_date_month_view.xml" value="0.2" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_day_time_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_events_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_favorite_item_view.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_gallery_photo_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_home_industry_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_locate_location_item_view.xml" value="0.20102564102564102" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_location_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_notification_list_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_package_coupon_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_package_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_pay_history_list_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_photos_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_reservation_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_saved_search_view.xml" value="0.25" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_subscription_package_item_view.xml" value="0.25" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_tags_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_upcoming_events_item_view.xml" value="0.1" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_upcoming_item_view.xml" value="0.5" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_visitor_search_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/row_visitot_photos_item_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Atul Project/android-planout/app/src/main/res/layout/working_days_hrs_popup_view.xml" value="0.20102564102564102" />
+        <entry key="app/src/main/res/layout/activity_business_details.xml" value="0.278125" />
+        <entry key="app/src/main/res/layout/activity_company_edit_profile.xml" value="0.278125" />
+        <entry key="app/src/main/res/layout/activity_home_visitor.xml" value="0.2151268115942029" />
+        <entry key="app/src/main/res/layout/activity_package_detail.xml" value="0.18333333333333332" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1045" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1045" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_planout_logo.xml" value="0.1045" />
+      </map>
+    </option>
+  </component>
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>

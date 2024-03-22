@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemViewMain"
+    android:layout_width="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_5"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_green_image_back">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/margin_70"
+        android:layout_height="@dimen/margin_70"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_marginVertical="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:elevation="@dimen/margin_0"
+        app:cardBackgroundColor="@color/background_color"
+        app:cardCornerRadius="@dimen/margin_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

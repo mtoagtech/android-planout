@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "498041722950",
+    "project_id": "planout-5ae38",
+    "storage_bucket": "planout-5ae38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498041722950:android:714af1e3ba950492d41247",
+        "android_client_info": {
+          "package_name": "com.planout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498041722950-hpjbn8ooamtm3hopta7iic63lho9kbu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.planout",
+            "certificate_hash": "13569474409f0892652189dce712123705223714"
+          }
+        },
+        {
+          "client_id": "498041722950-lp0nv4k63kvkq1ebvv7cukcd4sg1cblb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiz9twD-XcHUBjRphoIGCB4gNbtiHLkgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498041722950-lp0nv4k63kvkq1ebvv7cukcd4sg1cblb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "498041722950-973vmq4oqpbu6c02s8tmb1pgb73i9hal.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.planout"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_5"
+        app:cardElevation="@dimen/margin_5"
+        android:outlineAmbientShadowColor="@color/gray_B2_5B"
+        android:outlineSpotShadowColor="@color/gray_B2_5B"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="@dimen/margin_7"
+        android:layout_marginHorizontal="@dimen/margin_15">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_FF_14" >
+
+            <LinearLayout
+                android:id="@+id/linDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/margin_18"
+                android:paddingHorizontal="@dimen/margin_30"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txtDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="Sun"
+                    android:textColor="@color/app_green"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="14"
+                    android:layout_marginVertical="@dimen/margin_3"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="May"
+                    android:textColor="@color/gray_96_96"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="@dimen/margin_0"
+                android:background="@color/gray_F4_48"
+                app:layout_constraintEnd_toEndOf="@+id/linDate"
+                app:layout_constraintTop_toTopOf="@+id/linDate"
+                app:layout_constraintBottom_toBottomOf="@+id/linDate"/>
+
+            <LinearLayout
+                android:id="@+id/linDetail"
+                android:layout_width="@dimen/margin_0"
+                android:layout_height="@dimen/margin_0"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                app:layout_constraintTop_toTopOf="@id/linDate"
+                app:layout_constraintBottom_toBottomOf="@+id/linDate"
+                app:layout_constraintStart_toEndOf="@+id/view1"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/bold_helvetica_14dp"
+                    android:text="Jerry doen"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtReservNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="Reservation no. : B9HTXGDWD"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/gray_F4_48"
+                app:layout_constraintTop_toBottomOf="@+id/linDate"/>
+
+            <LinearLayout
+                android:id="@+id/linThreeImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/margin_18"
+                android:paddingHorizontal="@dimen/margin_10"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="10:30 AM"
+                    android:drawableTop="@drawable/ic_icon_time_only"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="4 People"
+                    android:drawableTop="@drawable/ic_icon_user_only"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:text="@string/indoor"
+                    android:drawableTop="@drawable/ic_icon_type_only"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/gray_F4_48"
+                app:layout_constraintTop_toBottomOf="@+id/linThreeImg"/>
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textSize="@dimen/margin_13"
+                android:drawableStart="@drawable/ic_icon_address"
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableTint="@color/black_white"
+                android:gravity="center_vertical"
+                android:text="Socratous 4, limassol 3036, cyprus..."
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/gray_F4_48"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/txtAddress"/>
+
+            <TextView
+                android:id="@+id/txtExtraTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:textSize="@dimen/margin_13"
+                android:text="@string/notes"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/view5"
+                android:layout_marginHorizontal="@dimen/margin_20"/>
+            <TextView
+                android:id="@+id/txtExtraNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textSize="@dimen/margin_13"
+                android:text="Socratous 4, limassol 3036, cyprus..."
+                android:visibility="gone"
+                android:textColor="@color/gray_96_96"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/view5"
+                android:layout_marginHorizontal="@dimen/margin_20"/>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/txtExtraNotes"/>
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textSize="@dimen/margin_13"
+                android:text="@string/we_are_over_booked"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:background="@color/app_red"
+                android:padding="@dimen/margin_10"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/view4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.CompanyEditProfileActivity">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        app:layout_constraintTop_toBottomOf="@+id/includ"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgCoverPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_180"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <ImageView
+                android:id="@+id/imgCoverPhotoClick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_180"
+                android:src="@drawable/img_bg_gray"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <LinearLayout
+                android:id="@+id/linImgClickCover"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_0"
+                app:layout_constraintTop_toTopOf="@+id/imgCoverPhoto"
+                android:visibility="visible"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCoverPhoto">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_img_click2"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/margin_80"
+                android:layout_height="@dimen/margin_80"
+                android:elevation="@dimen/margin_2"
+                app:civ_border_color="@color/background_color"
+                app:civ_border_width="@dimen/margin_5"
+                android:visibility="gone"
+                android:foregroundGravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCoverPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/imgCoverPhoto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_click"
+                android:layout_width="@dimen/margin_80"
+                android:layout_height="@dimen/margin_80"
+                android:foreground="@drawable/ic_img_click2"
+                app:civ_border_color="@color/gray_FF_14"
+                app:civ_border_width="@dimen/margin_5"
+                android:src="@drawable/placeholder_img"
+                app:layout_constraintEnd_toEndOf="@+id/profile_image"
+                app:layout_constraintStart_toStartOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="@+id/profile_image"
+                app:layout_constraintBottom_toBottomOf="@id/profile_image"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/imgCoverPhoto"
+                android:layout_marginTop="@dimen/margin_60">
+
+                <EditText
+                    android:id="@+id/editCompName"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:drawableStart="@drawable/ic_icon_company"
+                    android:drawablePadding="@dimen/margin_15"
+                    android:hint="@string/company_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/compNameErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editCompName" />
+
+                <EditText
+                    android:id="@+id/editName"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:drawableStart="@drawable/ic_icon_user"
+                    android:drawablePadding="@dimen/margin_17"
+                    android:hint="@string/full_name"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/nameErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editName" />
+
+                <TextView
+                    android:id="@+id/editEmail"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:drawableTint="@color/gray_B2"
+                    android:textColor="@color/gray_B2"
+                    app:layout_constraintTop_toBottomOf="@+id/editNameVisitor"
+                    app:drawableStartCompat="@drawable/ic_icon_email" />
+
+                <EditText
+                    android:id="@+id/editTelephone"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:drawableStart="@drawable/ic_icon_telephone"
+                    android:drawablePadding="@dimen/margin_15"
+                    android:hint="@string/telephone_e_g_22343456"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/telephoneErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editTelephone" />
+
+                <EditText
+                    android:id="@+id/editMobile"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:drawableStart="@drawable/ic_icon_mobile"
+                    android:drawablePadding="@dimen/margin_20"
+                    android:hint="@string/mobile"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/mobileErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editMobile" />
+
+                <EditText
+                    android:id="@+id/editFax"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:drawableStart="@drawable/ic_fax"
+                    android:drawablePadding="@dimen/margin_15"
+                    android:hint="@string/fax"
+                    android:maxLength="8"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/faxErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/editFax" />
+
+                <TextView
+                    android:id="@+id/txtIndustry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_16dp"
+                    android:text="@string/select_industry"
+                    android:textColor="@color/gray_3A_FF"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/txtIndustrySub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="@string/min_1_and_max_3_selections"
+                    android:textColor="@color/gray_5B"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGrpIndustry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/chipText_bold"
+                    android:background="@color/background_color"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/industryErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/chipGrpIndustry" />
+                <TextView
+                    android:id="@+id/txtExtraNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_16dp"
+                    android:text="@string/extra_notes"
+                    android:textColor="@color/gray_3A_FF"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/bg_edit_round_drawable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtExtraNote">
+
+                    <EditText
+                        android:id="@+id/editMessage"
+                        style="@style/editText_helvetica_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/margin_100"
+                        android:hint="@string/write_here"
+                        android:gravity="start"
+                        android:maxLength="300"
+                        android:textColorHint="@color/gray_96_96"
+                        android:background="@null"
+                        android:paddingHorizontal="@dimen/margin_20"
+                        android:paddingVertical="@dimen/margin_20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linTopic"/>
+
+                    <TextView
+                        android:id="@+id/txtChar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_12dp"
+                        android:textColor="@color/gray_96_96"
+                        android:gravity="end"
+                        android:text="0/300"
+                        android:layout_marginHorizontal="@dimen/margin_10"
+                        app:layout_constraintTop_toBottomOf="@+id/imgTop"
+                        android:layout_marginVertical="@dimen/margin_10"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/msgErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/linMsg" />
+
+                <TextView
+                    android:id="@+id/txtTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_16dp"
+                    android:text="@string/select_tags"
+                    android:textColor="@color/gray_3A_FF"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/txtTagsSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="@string/min_1_and_max_5_selections"
+                    android:textColor="@color/gray_5B"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGrpTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/chipText_bold"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+                <TextView
+                    android:id="@+id/tagsErr"
+                    style="@style/regular_helvetica_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:text="required field *"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@id/chipGrpTags" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/save_changes"
+                    android:padding="@dimen/margin_15"
+                    style="@style/bold_helvetica_14dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    app:backgroundTint="@color/app_green"
+                    app:layout_constraintTop_toBottomOf="@+id/linDOB"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginHorizontal="@dimen/margin_15"/>
+
+                <TextView
+                    android:id="@+id/txtCaution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:text="@string/caution_clicking_on_the_delete_button_will_delete_your_account_permanently"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSave"
+                    android:layout_marginTop="@dimen/margin_25"/>
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/delete_my_account"
+                    android:padding="@dimen/margin_15"
+                    style="@style/bold_helvetica_14dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_round_btn_drawable"
+                    app:backgroundTint="@color/app_red"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCaution"
+                    android:layout_marginTop="@dimen/margin_25"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_50"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

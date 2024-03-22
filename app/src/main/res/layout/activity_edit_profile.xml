@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.EditProfileActivity">
+
+    <include
+        android:id="@+id/includ"
+        layout="@layout/header_normal_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/includ"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_30">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/margin_80"
+                android:layout_height="@dimen/margin_80"
+                app:civ_border_color="@color/gray"
+                android:foreground="@drawable/ic_img_click"
+                android:src="@drawable/placeholder_img"
+                app:civ_border_width="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_click"
+                android:layout_width="@dimen/margin_80"
+                android:layout_height="@dimen/margin_80"
+                android:visibility="gone"
+                android:src="@drawable/ic_img_click"
+                app:civ_border_color="@color/gray"
+                app:civ_border_width="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/editNameVisitor"
+                style="@style/editText_helvetica_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_30"
+                android:background="@drawable/bg_round_edit_drawable"
+                android:drawableStart="@drawable/ic_icon_user"
+                android:drawablePadding="@dimen/margin_10"
+                android:hint="@string/full_name"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image"/>
+            <TextView
+                android:id="@+id/nameVisitorErr"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:text="required field *"
+                android:visibility="gone"
+                android:textColor="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@id/editNameVisitor" />
+
+            <TextView
+                android:id="@+id/editEmail"
+                style="@style/editText_helvetica_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/bg_round_edit_drawable"
+                android:drawablePadding="@dimen/margin_10"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:drawableTint="@color/gray_B2"
+                android:textColor="@color/gray_B2"
+                app:layout_constraintTop_toBottomOf="@+id/nameVisitorErr"
+                app:drawableStartCompat="@drawable/ic_icon_email" />
+
+            <LinearLayout
+                android:id="@+id/linDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/bg_round_edit_drawable"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editEmail">
+
+                <TextView
+                    android:id="@+id/editDob"
+                    style="@style/editText_helvetica_regular"
+                    android:layout_width="@dimen/margin_0"
+                    android:includeFontPadding="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_icon_dob"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:elevation="@dimen/margin_1"
+                    android:hint="DD / MM / YY"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_15" />
+
+                <ImageView
+                    android:id="@+id/imgEyeOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:src="@drawable/ic_icon_calender" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/dobVisitorErr"
+                style="@style/regular_helvetica_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:text="required field *"
+                android:visibility="gone"
+                android:textColor="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@id/linDOB" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/save_changes"
+                android:padding="@dimen/margin_15"
+                style="@style/bold_helvetica_14dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_btn_drawable"
+                app:backgroundTint="@color/app_green"
+                app:layout_constraintTop_toBottomOf="@+id/dobVisitorErr"
+                android:layout_marginTop="@dimen/margin_40"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <TextView
+                android:id="@+id/txtCaution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:text="@string/caution_clicking_on_the_delete_button_will_delete_your_account_permanently"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/btnSave"
+                android:layout_marginTop="@dimen/margin_25"/>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/delete_my_account"
+                android:padding="@dimen/margin_15"
+                style="@style/bold_helvetica_14dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_btn_drawable"
+                app:backgroundTint="@color/app_red"
+                app:layout_constraintTop_toBottomOf="@+id/txtCaution"
+                android:layout_marginTop="@dimen/margin_25"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

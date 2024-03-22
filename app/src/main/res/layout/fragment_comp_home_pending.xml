@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F7_33"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CompHomePendingFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_10"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/app_green">
+
+        <TextView
+            android:id="@+id/editSerach"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            style="@style/regular_helvetica_14dp"
+            android:background="@drawable/bg_edit_rect_green_drawable"
+            android:paddingVertical="@dimen/margin_12"
+            android:paddingHorizontal="@dimen/margin_20"
+            android:drawableStart="@drawable/ic_icon_top_search"
+            android:drawablePadding="@dimen/margin_15"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:text="@string/search_by_reservation_no_and_phone_amp"
+            android:textColor="@color/green_light"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_40"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/downloadExcel"/>
+
+        <ImageView
+            android:id="@+id/downloadExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_download_excel"
+            app:layout_constraintTop_toTopOf="@id/editSerach"
+            app:layout_constraintBottom_toBottomOf="@+id/editSerach"
+            app:layout_constraintEnd_toStartOf="@id/imgNotify"
+            android:layout_marginEnd="@dimen/margin_20"/>
+
+        <ImageView
+            android:id="@+id/imgNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_noti"
+            app:layout_constraintTop_toTopOf="@id/editSerach"
+            app:layout_constraintBottom_toBottomOf="@id/editSerach"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_20"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtDateRange"
+        android:layout_width="0dp"
+        android:gravity="center|start"
+        android:layout_height="@dimen/margin_50"
+        style="@style/regular_helvetica_14dp"
+        android:background="@color/background_color"
+        android:textSize="@dimen/margin_13"
+        android:text="@string/select_dates"
+        android:singleLine="true"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:paddingVertical="@dimen/margin_15"
+        android:paddingHorizontal="@dimen/margin_20"
+        app:layout_constraintEnd_toStartOf="@+id/txtStatus"
+        app:layout_constraintTop_toBottomOf="@+id/constHead"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txtStatus"
+        android:layout_height="@dimen/margin_50"
+        android:layout_width="0dp"
+        android:background="@drawable/bg_round_edit_drawable"
+        android:backgroundTint="@color/gray_FF_0D"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/txtDateRange"
+        app:layout_constraintTop_toBottomOf="@+id/constHead"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:dropDownWidth="wrap_content"
+            android:dropDownSelector="@drawable/ic_arrow_down"
+            android:minWidth="@dimen/margin_100"
+            android:minHeight="@dimen/margin_40"
+            android:paddingStart="@dimen/margin_15"
+            android:paddingEnd="@dimen/margin_40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgArrAgeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:padding="@dimen/margin_5"
+            android:src="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linNoMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateRange"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_more_reservation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/gray_5B_FF"
+            style="@style/regular_helvetica_16dp"
+            android:text="@string/no_reservations_yet"/>
+    </LinearLayout>
+    
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dataCard"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/gray_F7_33"
+        android:layout_margin="@dimen/margin_10"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateRange"
+        app:layout_constraintBottom_toTopOf="@+id/loadView">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <HorizontalScrollView
+                    android:id="@+id/horiScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerPending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </HorizontalScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_15"
+                    android:background="@color/background_color"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_16dp"
+                        android:background="@color/background_color"
+                        android:textSize="@dimen/margin_13"
+                        android:text="@string/total_no_of_people"
+                        android:singleLine="true"
+
+                        app:layout_constraintEnd_toStartOf="@+id/txtStatus"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                    <TextView
+                        android:id="@+id/totalPeopleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/bold_helvetica_16dp"
+                        android:background="@color/background_color"
+                        android:textSize="@dimen/margin_13"
+                        android:text=""
+                        android:singleLine="true"
+                        app:layout_constraintEnd_toStartOf="@+id/txtStatus"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:padding="@dimen/margin_10"
+        android:id="@+id/loadView"
+        style="@style/SpinKitView.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/app_green"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

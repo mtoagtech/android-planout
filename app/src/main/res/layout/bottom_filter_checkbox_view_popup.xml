@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_top_round_bottom_drawable"
+        app:layout_constraintBottom_toTopOf="@+id/viewBtm"
+        android:paddingVertical="@dimen/margin_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filters"
+                android:layout_marginVertical="@dimen/margin_10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/bold_helvetica_16dp"/>
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_15"
+                android:src="@drawable/ic_icon_cancel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkAll"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all"
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginVertical="@dimen/margin_5"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkPending"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pending"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginVertical="@dimen/margin_5"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkConfirmed"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmed"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginVertical="@dimen/margin_5"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkCanceled"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/canceled"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray_E7_48"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginVertical="@dimen/margin_5"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkDeclined"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/declined"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:button="@drawable/checked_on_off_drawable_round"
+                    android:paddingVertical="@dimen/margin_5"
+                    android:paddingHorizontal="@dimen/margin_10"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewBtm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/gray_F8_48"
+        app:layout_constraintBottom_toTopOf="@+id/constBtm"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constBtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txtClear"
+            style="@style/bold_helvetica_14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:text="@string/clear_all"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginVertical="@dimen/margin_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/btnApply"
+            style="@style/bold_helvetica_14dp_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginVertical="@dimen/margin_20"
+            android:paddingHorizontal="@dimen/margin_50"
+            android:background="@drawable/bg_round_btn_drawable"
+            app:backgroundTint="@color/app_green"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

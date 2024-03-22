@@ -1,0 +1,445 @@
+<resources>
+    <string name="app_name">PlanOut</string>
+
+    <!--<string name="facebook_app_id">1670227153343769</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb1670227153343769</string>-->
+    <!--<string name="fb_app_secret">6486c2badbb5bba081431e6b35d13f39</string>-->
+    <string name="facebook_app_id">583937093195114</string>
+    <string name="fb_login_protocol_scheme">fb583937093195114</string>
+    <string name="fb_app_secret">baf9f35a22b00efef74c3f77706e74cf</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_as_guest">Συνέχεια ως επισκέπτης</string>
+    <string name="log_in">Σύνδεση</string>
+    <string name="log_in2">Συνδέσου</string>
+    <string name="join_now">Join now</string>
+    <string name="discover_delicious">Ανακάλυψε   όλες  τις επιλογές σου</string>
+    <string name="reserve_table">Κάνε  την κράτηση σου</string>
+    <string name="instant_notification">Επιβαιβέωση  κράτησης</string>
+    <string name="forgot_password">Ξέχασες τον κωδικό σου ;</string>
+    <string name="forgot_password2">Ξεχασα τον κωδικο μου</string>
+    <string name="send_link">Send Link</string>
+    <string name="reset_pass2">Επαναφορά Κωδικού</string>
+    <string name="reset_pass">Επαναφορά Κωδικού</string>
+    <string name="check_your_email">Email Sent</string>
+    <string name="we_have_sent">An email with instructions on how to reset your\npassword has been sent.</string>
+    <string name="done">Έγινε</string>
+    <string name="did_not_receive">Did not receive the email? check your spam\nfilter, or <font color="#429488"><b>try another email address</b></font></string>
+    <string name="or_continue_with">Συνέχισε  με</string>
+    <string name="visitor">Επισκέπτης</string>
+    <string name="company">Επιχείρηση</string>
+    <string name="don_t_have_an_account">Δεν  εχεις λογαριασμό ;</string>
+    <string name="sign_up_small">Εγγραφή</string>
+    <string name="full_name2">Όνομα</string>
+    <string name="full_name">Όνομα</string>
+    <string name="full_name1">Όνομα</string>
+    <string name="company_name">Όνομα  Επιχείρησης</string>
+    <string name="password">Κωδικός</string>
+    <string name="password1">Password</string>
+    <string name="password2">Confirm password</string>
+    <string name="email">Εμαιλ</string>
+    <string name="sign_up">Εγγραφή</string>
+    <string name="already_have_an_account">Έχεις  ήδη  λογαριασμό ;</string>
+    <string name="select_industry">Διάλεξε Κατηγορία</string>
+    <string name="min_1_and_max_3_selections">1 εως  3  επιλογές </string>
+    <string name="telephone_e_g_22343456">Τηλέφωνο</string>
+    <string name="mobile">Κινητό</string>
+    <string name="try_again">Προσπάθησε ξανά</string>
+    <string name="oh_snap">Ω snap!</string>
+    <string name="somthing_went_wrong_please_try_again">Something went wrong.\nPlease try again.</string>
+    <string name="success">Success</string>
+    <string name="your_password_has_been_nreset_successfully">Your password has been\nreset successfully</string>
+    <string name="create_new_password">Create new password</string>
+    <string name="no_data_found">Κανένα  Αποτέλεσμα </string>
+    <string name="saved_search_title">Αποθηκευμένα</string>
+    <string name="favorite_title">Αγαπημένα</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="delete_saved_search">Διαγραφή αποθηκευμένης αναζήτησης</string>
+    <string name="are_you_sure_you_want_to_delete_saved_search">Είστε βέβαιοι ότι θέλετε να\nδιαγράψετε την αποθηκευμένη αναζήτηση;</string>
+    <string name="edit_profile_u"><u>Επεξεργασία Προφίλ</u></string>
+    <string name="confirm_logout">Αποσύνδεση</string>
+    <string name="are_you_sure_you_want_to_nlogout">Επιβεβαίωση  αποσύνδεσης</string>
+    <string name="save_changes">Αποθήκευση Αλλαγών</string>
+    <string name="caution_clicking_on_the_delete_button_will_delete_your_account_permanently"><font color="#FF3838">Προσοχή:</font> Πατώντας  το κουμπί "διαγαφή"  θα  διαγραφεί ο λογαριασμός  σας οριστικά</string>
+    <string name="delete_my_account">Διαγραφή  Λογαριασμου</string>
+    <string name="delete_account">Delete account</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">Are you sure you want to\ndelete your account?</string>
+    <string name="please_select_the_topic">Παρακαλώ Επιλέξτε  Θέμα  </string>
+    <string name="message">Μήνυμα</string>
+    <string name="submit">Υποβολή</string>
+    <string name="book">Book</string>
+    <string name="new_password">Νέο Κωδικός</string>
+    <string name="confirm_new_password">Επιβεβαίωση Νέου Κωδικού</string>
+    <string name="old_password">Παλιός Κωδικός</string>
+    <string name="change_password">Αλλαγή  Κωδικού</string>
+    <string name="mobile_label">Κινητό</string>
+    <string name="telephone_label">Τηλέφωνο</string>
+    <string name="fax_label">Φαξ</string>
+    <string name="industries">Κατηγορίες</string>
+    <string name="tags">Tags</string>
+    <string name="edit_company_profile_u"><u>Επεξεργσία Προφίλ</u></string>
+    <string name="edit_company_profile">Επεξεργσία Προφίλ</string>
+    <string name="photo_gallery">Φωτογραφίες</string>
+    <string name="min_1_and_max_10_selections">1 μέχρι 10  Eπιλογές</string>
+    <string name="add_images">Προσθήκη  Φωτογραφιών</string>
+    <string name="show_all">Εμφάνιση Ολων </string>
+    <string name="locations">Τοποθεσία</string>
+    <string name="location">Τοποθεσία</string>
+    <string name="add_location">Προσθήκη  Τοποθεσίας</string>
+    <string name="indoor">Μέσα</string>
+    <string name="outdoor">Έξω</string>
+    <string name="fax">Fax*</string>
+    <string name="select_tags">Επέλεξε Tags</string>
+    <string name="min_1_and_max_5_selections">Απο  1  Μέχρι 5  Επιλογές</string>
+    <string name="edit_profile">Επεξεργασία Προφιλ</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="explore_and_reserve">Ανακαλυψε και κάνε κράτηση</string>
+    <string name="popular_industries">Διάσημες Κατηγορίες</string>
+    <string name="beach_bar">Παραλιακά μπαράκια</string>
+    <string name="show_more">Περισσοτερα</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="reserve">Κάνε  Κράτηση</string>
+    <string name="upcoming_events">Επόμενα  event</string>
+    <string name="please_enter_your_email_address_associated_nwith_your_account_to_reset_your_password">Εισαγωγή σχετικού εμαιλ για επανάκτηση κωδικού</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="no_connection">Χωρίς σύνδεση</string>
+
+    <string name="something_went_wrong">Sorry, we couldn\'t find an complete information please try again.</string>
+    <string name="telephone_mus_be_8_char">The telephone must be at least 8 characters.</string>
+    <string name="mobile_must_be_8_char">The mobile must be at least 8 characters.</string>
+    <string name="events">Εκδηλώσεις</string>
+    <string name="reservation">Κράτηση</string>
+    <string name="sub_account">Sub account</string>
+    <string name="payment_history">Ιστορικό Πληρωμής</string>
+    <string name="language">Γλώσσα</string>
+    <string name="gallery">Αλμπουμ</string>
+    <string name="working_days_hrs">Μέρες / Ώρες Λειτουργίας</string>
+    <string name="subscription">Συνδρομή</string>
+    <string name="contact">Επικοινωνiα</string>
+    <string name="about">Σχετικά με</string>
+    <string name="privacy_policy">Πολιτική Απορρήτου</string>
+    <string name="terms_and_conditions">Όροι και Προϋποθέσεις</string>
+    <string name="logout">Αποσύνδεση</string>
+    <string name="allow_notifications">Να  Επιτρεπούν Eιδοποιήσεις </string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="select_your_location">Επιλογή Τοποθεσίας</string>
+    <string name="your_location">Η τοποθεσία σου</string>
+    <string name="api_key2">AIzaSyDT4xHAGWltV3HR5x02rwlrxSg5gTsP16c</string>
+    <string name="api_key">AIzaSyDa5_yaEvRVkwQri1y11JiJrxySiVNNpUU</string>
+    <string name="search_city">Search city</string>
+    <string name="select_city">Επιλογή Πόλης</string>
+    <string name="view_all">Δες τα όλα</string>
+    <string name="decline">Decline</string>
+    <string name="confirm">Eπιβεβ</string>
+    <string name="city">Πόλη</string>
+    <string name="industry">Κατηγορία</string>
+    <string name="categories">Κατηγορίες</string>
+    <string name="recent_search">Πρόσφατη  Αναζητήση</string>
+    <string name="save_search">Αποθήκευση αναζήτησης</string>
+    <string name="view"><u>Θέα</u></string>
+    <string name="clear_all">Καθαρισμός όλων</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="sort_amp_filters"><![CDATA[Φίλτρα]]></string>
+    <string name="filters">Φίλτρα</string>
+    <string name="apply">Εφαρμογή</string>
+    <string name="pending">Εκκρεμή</string>
+    <string name="confirmed">Επιβαιβεωμενη</string>
+    <string name="canceled">Ακυρώθηκε</string>
+    <string name="declined">Απορρίφθηκε</string>
+    <string name="no_reservations_yet">Καμία Κράτηση</string>
+    <string name="notifications">Ειδοποιήσεις</string>
+    <string name="no_notification_yet">No notifications available yet!</string>
+    <string name="reserve_a_table">Κάνε κράτηση </string>
+    <string name="closed_for_reserve">Κλειστό για κρατήσεις</string>
+    <string name="address_and_location">Διέυθυνση και  Τοποθεσία </string>
+    <string name="locate">Εντοπισμός</string>
+    <string name="call">Κλήση</string>
+    <string name="you_may_also_like">Άλλες  Προτάσεις</string>
+    <string name="date">Ημερ</string>
+    <string name="time">Ωρα </string>
+    <string name="no_of_people">Αρ. Ατόμων:</string>
+    <string name="preferred_table">Τραπέζι:</string>
+    <string name="contact_details">Λεπτομέριες  Επικοινωνείας</string>
+    <string name="mobile_number">Αρ.Τηλεφώνου</string>
+    <string name="extra_notes">Επιπλέον Σημειώσεις</string>
+    <string name="notes_text_reser">Use a dummy email accounts since this is required upon registration, please take a note on this</string>
+    <string name="write_here">Γράψε  εδώ</string>
+    <string name="confirm_reservation">Επιβεβαίωση κράτησης</string>
+    <string name="add_reservation">Προσθήκη  Κράτησης</string>
+    <string name="notes">Επιπλέον σημειώσεις : </string>
+    <string name="address">Διεύθυνση</string>
+    <string name="cancel_reservation">Ακύρωση κράτησης</string>
+    <string name="decline_reservation">Απόρριψη κράτησης</string>
+    <string name="all">All</string>
+    <string name="wrong_info">Λάθος  πληροφορίες</string>
+    <string name="we_are_over_booked">ΔΕΝ  υπάρχει  χώρος</string>
+    <string name="we_are_close">Κλειστό</string>
+    <string name="currency">€%1$s</string>
+    <string name="no_favourites_yet">Κανένα  Αγαπημένο</string>
+    <string name="payment_method">Μέθοδος πληρωμής</string>
+    <string name="summary">Περίληψη</string>
+    <string name="download">Λήψη</string>
+    <string name="view_in_browser">View in browser</string>
+    <string name="you_have_no_nactive_package">Κανένα  ενεργό πακέτο</string>
+    <string name="active_package">Ενεργό Πακέτο</string>
+    <string name="renew">Ανανέωση</string>
+    <string name="next_renewal_on">Επόμενη ανανέωση στις</string>
+    <string name="available_packages">Διαθέσιμα Πακέτα </string>
+    <string name="buy_now">Aγορά τώρα</string>
+    <string name="use_coupons">Χρησιμοποιήστε κουπόνια</string>
+    <string name="select_payment_method">Επιλέξτε τρόπο πληρωμής</string>
+    <string name="proceed_to_pay">Συνεχίστε να πληρώσετε</string>
+    <string name="select_date_range_first">Select dates range first</string>
+    <string name="select_from_date_first">Select from date first</string>
+    <string name="select_to_date_first">Select to date first</string>
+    <string name="i_accept_terms_and_conditions"><u>Αποδέχομαι τους όρους και τις προϋποθέσεις…</u></string>
+    <string name="enter_coupon_code">Εισαγάγετε τον κωδικό κουπονιού</string>
+    <string name="apply_coupon">εφάρμοσε το κουπόνι</string>
+    <string name="i_accept_terms_condition">Αποδέχομαι τους όρους και τις προϋποθέσεις</string>
+    <string name="create_event">Δημιoυργ. Event</string>
+    <string name="event_title">Όνομα Event</string>
+    <string name="enter_event_title">Όνομα Event</string>
+    <string name="start_time">Άνοιγμα</string>
+    <string name="end_time">Κλείσιμο</string>
+    <string name="add_image">Προσθήκη  Φωτογραφιών</string>
+    <string name="description">Περιγραφή</string>
+    <string name="enter_description">Γράψε  την περιγραφή</string>
+    <string name="apply_dates">Εφαρμογή Ημερ.</string>
+    <string name="select_dates">Επιλογή Ημερ.</string>
+    <string name="discount">Discount</string>
+    <string name="package_detail">Λεπτομέρεια πακέτου</string>
+    <string name="order_detail">Λεπτομέρειες Παραγγελίας</string>
+    <string name="no_internet_connection">Δεν υπάρχει σύνδεση στο διαδίκτυο!</string>
+    <string name="trending_now">Trending  Now</string>
+    <string name="remember_me">Αποθ. Κωδικ.</string>
+    <string name="host_account">Λογαριασμος Host</string>
+    <string name="business">Επιχείρηση</string>
+    <string name="offer_expires_in">Η προσφορα  λήγει σε</string>
+    <string name="days">μέρες</string>
+    <string name="active">Ενεργό</string>
+    <string name="months">Μήνες</string>
+    <string name="off">Κλειστό</string>
+    <string name="create">Δημιουργία</string>
+
+
+    <string name="bottom_home">Αρχική</string>
+    <string name="bottom_reservation">Κράτηση</string>
+    <string name="bottom_notification">Ειδοποίηση</string>
+    <string name="bottom_profile">Προφίλ</string>
+    <string name="bottom_event">Event</string>
+    <string name="bottom_more">Περισσ.</string>
+
+
+    <string name="profile_allow_notification">Επιτραπούν  Ειδοποιήσεις</string>
+    <string name="my_reservation">Οι κρατήσεις μου</string>
+    <string name="your_reservation">Η κράτηση σου</string>
+    <string name="upcoming">Επόμενο</string>
+    <string name="past">Προήγουμενο</string>
+    <string name="all_notifications">Ειδοποιήσεις</string>
+    <string name="select_date">Επιλογή Ημερ.</string>
+
+
+    <string name="total_no_of_people">Συνολικος. αρ. ατόμων : </string>
+    <string name="arrived">ΕΦΤΑΣΕ</string>
+    <string name="status">ΚΑΤΑΣΤΑΣΗ</string>
+    <string name="name">ΟΝΟΜΑ</string>
+    <string name="reservation_no">ΑΡ. ΚΡΑΤΗΣΗΣ.</string>
+    <string name="mobile_no">ΑΡ. ΤΗΛ.</string>
+    <string name="no_of_people_cap">ΑΡ.  ΑΤΟΜΩΝ </string>
+    <string name="date_time"><![CDATA[ΗΜΕΡ. & ΩΡΑ]]></string>
+    <string name="table_no">ΑΡ. ΤΡΑΠΕΖΙΟΥ</string>
+    <string name="indoors_outdoors">ΜΕΣΑ /  ΕΞΩ</string>
+    <string name="age">ΗΛΙΚΙΑ</string>
+    <string name="extra_notes_cap">Επιπλέον  Σημ. </string>
+
+    <string name="age_group">Ηλικία</string>
+    <string name="table_no_small">Αρ. Τραπεζιού</string>
+    <string name="edit">Επεξεργσία</string>
+    <string name="make_it_as_default_location">Καθορισμός ως βασική Τοποθεσία</string>
+    <string name="shift_one">Βάρδια 1</string>
+    <string name="shift_two">Βάρδια 2</string>
+
+    <string name="use_gps_location">Χρήση Τοποθεσίας GPS</string>
+    <string name="add_address_manually">Προσθήκη Διέθυνσης</string>
+    <string name="table">Τραπέζι</string>
+    <string name="save_location">Αποθήκευση</string>
+    <string name="save_city">Επιλογή Πόλης</string>
+    <string name="select_a_topic">Παρακαλώ επέλεξε θέμα</string>
+    <string name="mark_all_as_read">Σημείωσε  ως διαβασμένο</string>
+    <string name="new_notifications">Νέες Ειδοποιήσεις</string>
+
+    <string name="confirmation_pending">Επιβεβαίωση σε εκκρεμότητα</string>
+
+
+    <string name="msg_internet_conn">Παρακαλώ  ελεγξτε τη συνδεση σας  στο δίκτύο</string>
+    <string name="msg_name">Όνομα και Επίθετο</string>
+    <string name="msg_name_valid">Όνομα και Επίθετο</string>
+    <string name="msg_name_valid_sub">Ονομα</string>
+    <string name="msg_company">Όνομα Επιχείρησης</string>
+    <string name="msg_company_valid">Όνομα Επιχείρησης</string>
+    <string name="msg_telephone">Τηλέφωνο</string>
+    <string name="msg_telephone_valid">Τηλέφωνο</string>
+    <string name="msg_mobile">Κινητό τηλέφωνο</string>
+    <string name="msg_mobile_valid">Κινητό τηλέφωνο</string>
+    <string name="msg_email">Ηλεκ. Διευθ.</string>
+    <string name="msg_email_sub">Παρακαλώ πρόσθεσε  το email  σου</string>
+    <string name="msg_email_valid">Ηλεκ. Διευθ.</string>
+
+    <string name="msg_fax">Enter your fax</string>
+    <string name="msg_fax_valid">The fax must be at least 8 characters.</string>
+
+    <string name="msg_pass">Εισαγωγή Κωδικού</string>
+    <string name="msg_pass_sub">Παρακαλώ εισάγετε  κωδικό</string>
+    <string name="msg_pass_valid">Εισαγωγή Κωδικού- ελάχιστο  6  χαρακτ.</string>
+    <string name="msg_pass_valid_char">Ελαχιστ. 6  χαρακτήρες 1 κεφαλαίο/ 1 μικρό/ ειδικ. χαρακτ. / 1  ψηφίο</string>
+    <string name="msg_industry">Επιλογή 1 κατηγορίας</string>
+    <string name="msg_tags">Επιλογή 1 tag</string>
+    <string name="msg_industry_valid">Επιλογή  απο 1 - 3 κατηγορίες</string>
+    <string name="msg_tag_valid">Επιλογή απο 1 - 5 tags</string>
+
+
+
+
+    <string name="remove_confirmation">Αφαίρεση επιβεβαίωσης</string>
+    <string name="remove_coupon">Είστε βέβαιοι οτι θέλετε να  αφαιρέσετε αυτο το κουπόνι ;</string>
+    <string name="preferred_payment_method">Επιλογή τρόπου πληρωμής </string>
+    <string name="accept_terms_and_conditions">Αποδοχή σε  Όρους και  Προυποθέσεις</string>
+    <string name="confirm_payment">Επιβεβαίωση Πληρωμής</string>
+    <string name="proceed_to_payment">Βέβαιοι οτι θέλετε να  προχωρήσετε  σε  πληρωμή</string>
+    <string name="remove">Αφαίρεση</string>
+    <string name="proceed">Συνέχεια</string>
+    <string name="download_confirmation">Επιβεβαίωση Λήψης</string>
+    <string name="download_invoice">Λήψη τιμολογίου</string>
+    <string name="sure_log_out">Επιβεβαίωση  αποσύνδεσης</string>
+    <string name="delete_photo">Διαγραφή  φωτογραφίας</string>
+    <string name="sure_delete_photo">Επιβεβαίωση διαγραφης </string>
+    <string name="update">Ενημέρωση</string>
+    <string name="available_update">Διαθέσιμη Αναβάθμιση  Εφαρμογής </string>
+    <string name="not_now">Οχι τώρα</string>
+    <string name="select_language">Επιλογή Γλώσσας</string>
+
+
+    <string name="select_topic_first">Επιλογή θέματος</string>
+    <string name="search_by_reservation_no_and_phone">Εύρεση  με αρ. κρατησ. και αρ. τηλ</string>
+    <string name="search_about_restaurant_club_bar">Εύρεση  ανα είδο εστιατορίου , club</string>
+    <string name="search_by_reservation_no_and_phone_amp">Εύρεση  με αρ. κρατησ. και αρ. τηλ</string>
+    <string name="restaurant_club_bar">Εστιατόριο, Club , Bar</string>
+    <string name="people">Άτομα</string>
+    <string name="delete_location">Διαγραφή Τοποθεσίας</string>
+
+    <string name="enter_old_password">Εισαγωγή  παλαιού κωδικού</string>
+    <string name="enter_new_password">Εισαγωγή  νέου κωδικού</string>
+    <string name="password_validation">Ελαχιστ. 6  χαρακτήρες 1 κεφαλαίο/ 1 μικρό/ ειδικ. χαρακτ. / 1  ψηφίο</string>
+    <string name="enter_confirm_password">Επιβεβαίωση κωδικού</string>
+    <string name="confirm_password_not_match">Κωδικ. &amp; Επιβεβ. κωδικος  να ειναι συμβατοί</string>
+
+
+    <string name="login_confirmation">Επιβεβαίωση σύνδεσης</string>
+    <string name="login_confirmation_text">Απαιτείται σύνδεση για πρόσβαση σε αυτήν τη δυνατότητα.</string>
+    <string name="login">Σύνδεση</string>
+    <string name="delete_user">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτόν τον χρήστη;</string>
+    <string name="enter_mobile_number">Αρ. Τηλεφώνου</string>
+
+
+    <string name="enter_message">Γράψε το μήνυμα</string>
+    <string name="enter_table_type">Εισαγάγετε τον τύπο του τραπεζιού σας</string>
+    <string name="enter_event_description">Περιγραφή  event </string>
+    <string name="enter_address">Διευθηνση</string>
+    <string name="enter_address_validation">Τουλάχιστο 3  χαρακτήρες</string>
+    <string name="enter_area">Περιοχή</string>
+    <string name="select_your_city">Επιλογή Πόλης</string>
+    <string name="enter_postal_code">Ταχ. Κωδ.</string>
+    <string name="enter_latitude">γεωγρ. πλάτος</string>
+    <string name="enter_longitude">γεωγρ. μήκος</string>
+    <string name="location_not_enabled">Η τοποθεσία  δεν είναι ανοιχτή</string>
+    <string name="select_restaurant_location">Τοποθεσία εστιατορίου</string>
+
+    <string name="select_age_group">Ηλικία</string>
+    <string name="select_reservation_date">Επιλογή ημερ. κράτησης</string>
+    <string name="select_reservation_time">Επιλογή   Ώρα. κράτησης</string>
+    <string name="enter_table_number">Εισαγωγή αρ. τραπεζ.</string>
+    <string name="select_month">Επιλογή μήνα</string>
+    <string name="use_another_image">Κάτι πήγε στραβά, παρακαλώ  δοκιμάστε ξανά με άλλη φωτογρφία</string>
+
+
+    <string name="area">Περιοχή</string>
+    <string name="latitude">γεωγρ.πλάτος</string>
+    <string name="longitude">γεωγρ. μήκος</string>
+    <string name="postal_code">Ταχ.κώδικ.</string>
+    <string name="select">Επιλογή Πόλης</string>
+
+
+    <string name="cancel_subscription">Ακύρωση  Εγγραφής</string>
+    <string name="cancel_subscription_text">Είστε  σίγουροι οτι θέλετε να ακυρώσετε την εγγραφή σας ;</string>
+    <string name="payment">Πληρωμή</string>
+    <string name="payment_failed">Πληρωμή απέτυχε. Παρακαλώ δοκιμάστε  ξανά</string>
+
+
+    <string name="choose_one">Επιλέξτε ένα</string>
+    <string name="select_one_for_profile">Παρακαλώ  επιλέξτε  φωτογραφία προφίλ</string>
+    <string name="enter_dob">Ημ. Γεννησ.</string>
+    <string name="camera">Κάμερα</string>
+    <string name="search_has_been_saved">Η επιλογλη σας έχει αποθηκευτεί</string>
+
+
+
+    <string name="from">Απο</string>
+    <string name="to">Προς</string>
+
+
+    <string name="download_complete_path">Λήψη πλήρους Τοποθεσίας:</string>
+
+
+    <string name="calendar_sunday">Κυρ.</string>
+    <string name="calendar_monday">Δευτ.</string>
+    <string name="calendar_tuesday">Τριτ.</string>
+    <string name="calendar_wednesday">Τεταρ.</string>
+    <string name="calendar_thursday">Πέμπ.</string>
+    <string name="calendar_friday">Παρασκ.</string>
+    <string name="calendar_saturday">Σάβ.</string>
+
+    <string name="close">Κλειστό</string>
+    <string name="open_at">Ανοιχτό στο </string>
+    <string name="open">Ανοιχτό</string>
+    <string name="closed">Κλειστό</string>
+    <string name="close_at">Κοντά στο </string>
+
+    <string name="reservation_no_small">Κράτηση αρ. :</string>
+    <string name="not_available">Μη διαθέσιμος</string>
+    <string name="reservation_all_text">Συγχαρητήρια! Η κράτησή σας\nέχει επιβεβαιωθεί. Ευχαριστώ!</string>
+    <string name="reservation_cancel_text">Η κράτησή σας έγινε\nακυρώθηκε</string>
+    <string name="reservation_declined_text">Η κράτησή σας απορρίφθηκε</string>
+    <string name="reservation_pending_text">Η κράτησή σας εκκρεμεί για\nέγκριση</string>
+
+    <string name="edit_event">Επεξεργασία συμβάντος</string>
+    <string name="update_event">Ενημέρωση εκδήλωσης</string>
+
+    <string name="calendar_jan">Ιαν.</string>
+    <string name="calendar_Feb">Φεβ.</string>
+    <string name="calendar_Mar">Μαρτ.</string>
+    <string name="calendar_Apr">Απρίλ.</string>
+    <string name="calendar_May">Μάης</string>
+    <string name="calendar_Jun">Ιούν.</string>
+    <string name="calendar_Jul">Ιούλ.</string>
+    <string name="calendar_Aug">Άυγ.</string>
+    <string name="calendar_Sep">Σεπ.</string>
+    <string name="calendar_Oct">Οκτ.</string>
+    <string name="calendar_Nov">Νοέμ.</string>
+    <string name="calendar_Dec">Δεκ.</string>
+
+
+    <string name="event_title_validation">Όνομα event</string>
+    <string name="event_date_validation">Παρακαλώ εισάγετε ημερ. event</string>
+    <string name="event_start_end_time_validation">Επιλέξτε την ώρα έναρξης και λήξης της εκδήλωσής σας</string>
+    <string name="event_time_validation">Κλείσιμο</string>
+    <string name="event_location_validation">Παρακαλώ επιλέξτε  τοποθεσία</string>
+    <string name="event_image_validation">Φωτογραφία Event </string>
+    <string name="date_validation">Παρακαλώ εισάγετε ημερ. event</string>
+
+
+    <string name="hi_guest">Γεια! Επισκέπτης</string>
+
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name = "PlanOut Android"
+include ':app',':rangedatepicker', ':multiple-images-selector'

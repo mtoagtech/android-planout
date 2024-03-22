@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".fragments.CompanyMoreFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topAria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+        android:paddingHorizontal="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_60"
+        android:paddingBottom="@dimen/margin_20"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/margin_18"
+            android:layout_height="@dimen/margin_19"
+            android:src="@drawable/ic_more_notification"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/regular_helvetica_16dp"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_35"
+            android:text="@string/allow_notifications"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/switchNotify"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tbAsDefaultOn="false"
+            app:tbOffBorderColor="@color/gray_E2_48"
+            app:tbOffColor="@color/gray_E2_48"
+            app:tbOnColor="@color/white"
+            app:tbSpotColor="@color/app_green" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topAria2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+        android:paddingHorizontal="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_20"
+        app:layout_constraintTop_toBottomOf="@id/topAria">
+
+        <ImageView
+            android:id="@+id/imageReservition"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_21"
+            android:src="@drawable/ic_tab_reservation"
+            app:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textReservition"
+            style="@style/regular_helvetica_16dp"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_35"
+            android:includeFontPadding="false"
+            android:text="@string/reservation"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/switchReservation"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tbAsDefaultOn="false"
+            app:tbOffBorderColor="@color/gray_E2_48"
+            app:tbOffColor="@color/gray_E2_48"
+            app:tbOnColor="@color/white"
+            app:tbSpotColor="@color/app_green" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topAria3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_green"
+        android:visibility="gone"
+        android:paddingHorizontal="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_20"
+        app:layout_constraintTop_toBottomOf="@id/topAria2">
+
+        <ImageView
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_21"
+            android:src="@drawable/ic_icon_user"
+            app:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subAccountText"
+            style="@style/regular_helvetica_16dp"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_35"
+            android:includeFontPadding="false"
+            android:text="@string/host_account"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/switchSubAccount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/switchSubAccount"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/menuIc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/subAccountText"
+            app:tbAsDefaultOn="false"
+            app:tbOffBorderColor="@color/gray_E2_48"
+            app:tbOffColor="@color/gray_E2_48"
+            app:tbOnColor="@color/white"
+            app:tbSpotColor="@color/app_green" />
+
+        <ImageView
+            android:id="@+id/menuIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_dot_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/switchSubAccount"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topAria3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/gray_E7" />
+
+
+            <TextView
+                android:id="@+id/companyTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_company"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/business"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/eventsTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_event"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/events"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/txtReservation"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_reservation"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/reservation"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/txtBtnLanguage"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_language"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/language"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/txtBtnPayHistory"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_payment_history"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/payment_history"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/galleryTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_gellery"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/gallery"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineGallery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/workingDaysHour"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_working_days_hour"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/working_days_hrs"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineWorkingHour"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/locationTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_locations"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/locations"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineLoaction"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/subscriptionTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_subscrition"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/subscription"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/changePasswordTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_change_password"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/change_password"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/contactTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_contact"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/contact"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/txtBtnAbout"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_about"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/about"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/txtBtnPrivacy"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_privacy_policy"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/privacy_policy"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/txtBtnTerms"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_more_terems_and_conditions"
+                android:drawableRight="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/terms_and_conditions"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:layout_marginHorizontal="@dimen/margin_20"
+                android:background="@color/gray_E7_48" />
+
+            <TextView
+                android:id="@+id/logoutTxt"
+                style="@style/regular_helvetica_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_more_logout"
+                android:drawableEnd="@drawable/ic_arrow_fwd"
+                android:drawablePadding="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/margin_20"
+                android:paddingVertical="@dimen/margin_20"
+                android:singleLine="true"
+                android:text="@string/logout"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

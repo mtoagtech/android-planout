@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/margin_80"
+    android:maxWidth="@dimen/margin_190"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_edit_delete_view_drawable"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/txtDefault"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/make_it_as_default_location" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/gray_F4_48"/>
+
+        <TextView
+            android:id="@+id/txtEdit"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="@dimen/margin_10"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/edit" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@color/gray_F4_48"/>
+
+        <TextView
+            android:id="@+id/txtDelete"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColor="@color/app_red"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/delete" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

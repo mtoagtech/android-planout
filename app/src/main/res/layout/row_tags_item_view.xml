@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/margin_50"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtSelectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/regular_helvetica_14dp"
+        android:textSize="@dimen/margin_13"
+        android:text="Bar / Pups"
+        android:textColor="@color/app_orange"
+        android:background="@drawable/bg_orange_drawable"
+        android:paddingVertical="@dimen/dimen_8"
+        android:paddingHorizontal="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:layout_marginVertical="@dimen/margin_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">rangedatepicker</string>
+
+    <string name="calendar_sunday">Κυρ.</string>
+    <string name="calendar_monday">Δευτ.</string>
+    <string name="calendar_tuesday">Τριτ.</string>
+    <string name="calendar_wednesday">Τεταρ.</string>
+    <string name="calendar_thursday">Πέμπ.</string>
+    <string name="calendar_friday">Παρασκ.</string>
+    <string name="calendar_saturday">Σάβ.</string>
+</resources>

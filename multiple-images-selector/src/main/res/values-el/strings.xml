@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selector_folder_all">Όλες οι εικόνες</string>
+    <string name="selector_caption">Επιλέξτε Εικόνες</string>
+    <!--http://stackoverflow.com/questions/17502824/whats-wrong-with-this-format-string-->
+    <string name="selector_action_done">Έγινε (%1$d/%2$d)</string>
+    <string name="selector_preview">Προεπισκόπηση</string>
+
+    <string name="selector_reach_max_image_hint">Έχετε επιλέξει %d εικόνες ήδη!</string>
+    <string name="tip_take_photo">Βγάλε φωτογραφία</string>
+    <string name="msg_no_camera">Δεν είναι δυνατή η εκκίνηση της κάμερας!</string>
+    <string name="camera_temp_file_error">Σφάλμα αρχείου Temp!</string>
+
+    <string name="selector_permission_error">Η άδεια απορρίφθηκε, απέτυχε να λειτουργήσει σωστά!</string>
+    <string name="read_write_storage_rationale">Απαιτείται άδεια ανάγνωσης/εγγραφής αποθήκευσης</string>
+    <string name="camera_rationale">Χρειάζεστε άδεια κάμερας</string>
+</resources>

@@ -1,0 +1,432 @@
+<resources>
+    <string name="app_name">PlanOut</string>
+
+    <!--<string name="facebook_app_id">1670227153343769</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb1670227153343769</string>-->
+    <!--<string name="fb_app_secret">6486c2badbb5bba081431e6b35d13f39</string>-->
+    <string name="facebook_app_id">583937093195114</string>
+    <string name="fb_login_protocol_scheme">fb583937093195114</string>
+    <string name="fb_app_secret">baf9f35a22b00efef74c3f77706e74cf</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in2">Log In</string>
+    <string name="join_now">Join now</string>
+    <string name="discover_delicious">Explore your options</string>
+    <string name="reserve_table">Make a reservation</string>
+    <string name="instant_notification">Get your confirmation</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="forgot_password2">Forgot password?</string>
+    <string name="send_link">Send Link</string>
+    <string name="reset_pass2">Reset Password</string>
+    <string name="reset_pass">Reset password</string>
+    <string name="check_your_email">Email Sent</string>
+    <string name="we_have_sent">An email with instructions on how to reset your\npassword has been sent.</string>
+    <string name="done">Done</string>
+    <string name="did_not_receive">Did not receive the email? check your spam\nfilter, or <font color="#429488"><b>try another email address</b></font></string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="visitor">Visitor</string>
+    <string name="company">Business</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_up_small">Sign up</string>
+    <string name="full_name2">Full Name*</string>
+    <string name="full_name">Full name*</string>
+    <string name="full_name1">Full name</string>
+    <string name="company_name">Business name*</string>
+    <string name="password">Password*</string>
+    <string name="password1">Password</string>
+    <string name="password2">Confirm password</string>
+    <string name="email">Email*</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="select_industry">Select categories*</string>
+    <string name="min_1_and_max_3_selections">Min 1 and Max 3 selections</string>
+    <string name="telephone_e_g_22343456">Telephone (e.g. 22343456)*</string>
+    <string name="mobile">Mobile*</string>
+    <string name="try_again">Try again</string>
+    <string name="oh_snap">Oh snap!</string>
+    <string name="somthing_went_wrong_please_try_again">Something went wrong.\nPlease try again.</string>
+    <string name="success">Success</string>
+    <string name="your_password_has_been_nreset_successfully">Your password has been\nreset successfully</string>
+    <string name="create_new_password">Create new password</string>
+    <string name="no_data_found">No data found!</string>
+    <string name="saved_search_title">Saved search</string>
+    <string name="favorite_title">Favorites</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_saved_search">Delete saved search</string>
+    <string name="are_you_sure_you_want_to_delete_saved_search">Are you sure you want to\ndelete this saved search?</string>
+    <string name="edit_profile_u"><u>Edit profile</u></string>
+    <string name="confirm_logout">Confirm Logout</string>
+    <string name="are_you_sure_you_want_to_nlogout">Are you sure you want\nto Logout?</string>
+    <string name="save_changes">Save changes</string>
+    <string name="caution_clicking_on_the_delete_button_will_delete_your_account_permanently"><font color="#FF3838">Caution:</font> Clicking on the delete button will delete your account permanently.</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="delete_account">Delete account</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">Are you sure you want to\ndelete your account?</string>
+    <string name="please_select_the_topic">Please select the Topic</string>
+    <string name="message">Message…</string>
+    <string name="submit">Submit</string>
+    <string name="book">Book</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="old_password">Old password</string>
+    <string name="change_password">Change password</string>
+    <string name="mobile_label">Mobile</string>
+    <string name="telephone_label">Telephone</string>
+    <string name="fax_label">Fax</string>
+    <string name="industries">Categories</string>
+    <string name="tags">Tags</string>
+    <string name="edit_company_profile_u"><u>Edit business profile</u></string>
+    <string name="edit_company_profile">Edit business profile</string>
+    <string name="photo_gallery">Photo gallery</string>
+    <string name="min_1_and_max_10_selections">Min 1 and max 10 selections</string>
+    <string name="add_images">Add images</string>
+    <string name="show_all">Show all</string>
+    <string name="locations">Locations</string>
+    <string name="location">Location</string>
+    <string name="add_location">Add location</string>
+    <string name="indoor">Indoor</string>
+    <string name="outdoor">Outdoor</string>
+    <string name="fax">Fax*</string>
+    <string name="select_tags">Select tags*</string>
+    <string name="min_1_and_max_5_selections">Min 1 and Max 5 selections</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="save">Save</string>
+    <string name="explore_and_reserve">Explore and Reserve</string>
+    <string name="popular_industries">Popular categories</string>
+    <string name="beach_bar">Beach bar</string>
+    <string name="show_more">Show more</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="reserve">Reserve</string>
+    <string name="upcoming_events">Upcoming events</string>
+    <string name="please_enter_your_email_address_associated_nwith_your_account_to_reset_your_password">Please enter your email address associated\nwith your account to reset your password.</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="no_connection">No connection</string>
+
+    <string name="something_went_wrong">Sorry, we couldn\'t find an complete information please try again.</string>
+    <string name="telephone_mus_be_8_char">The telephone must be at least 8 characters.</string>
+    <string name="mobile_must_be_8_char">The mobile must be at least 8 characters.</string>
+    <string name="events">Events</string>
+    <string name="reservation">Reservation</string>
+    <string name="sub_account">Sub account</string>
+    <string name="payment_history">Payment history</string>
+    <string name="language">Language</string>
+    <string name="gallery">Gallery</string>
+    <string name="working_days_hrs">Working days/hrs</string>
+    <string name="subscription">Subscription</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="logout">Logout</string>
+    <string name="allow_notifications">Allow notifications</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="select_your_location">Select your location</string>
+    <string name="your_location">Your location</string>
+    <string name="api_key2">AIzaSyDT4xHAGWltV3HR5x02rwlrxSg5gTsP16c</string>
+    <string name="api_key">AIzaSyDa5_yaEvRVkwQri1y11JiJrxySiVNNpUU</string>
+    <string name="search_city">Search city</string>
+    <string name="select_city">Select City</string>
+    <string name="view_all">View all</string>
+    <string name="decline">Decline</string>
+    <string name="confirm">Confirm</string>
+    <string name="city">City</string>
+    <string name="industry">Category</string>
+    <string name="categories">Categories</string>
+    <string name="recent_search">Recent Search</string>
+    <string name="save_search">Save Search</string>
+    <string name="view"><u>View</u></string>
+    <string name="clear_all">Clear All</string>
+    <string name="search">Search</string>
+    <string name="sort_amp_filters"><![CDATA[Sort & Filters]]></string>
+    <string name="filters">Filters</string>
+    <string name="apply">Apply</string>
+    <string name="pending">Pending</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="canceled">Cancelled</string>
+    <string name="declined">Declined</string>
+    <string name="no_reservations_yet">No reservations yet!</string>
+    <string name="notifications">Notifications</string>
+    <string name="no_notification_yet">No notifications available yet!</string>
+    <string name="reserve_a_table">Reserve a table</string>
+    <string name="closed_for_reserve">Closed For Reservation</string>
+    <string name="address_and_location">Address and location</string>
+    <string name="locate">Locate</string>
+    <string name="call">Call</string>
+    <string name="you_may_also_like">You may also like</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="no_of_people">No of people:</string>
+    <string name="preferred_table">Preferred table:</string>
+    <string name="contact_details">Contact details</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="extra_notes">Extra notes</string>
+    <string name="notes_text_reser">Use a dummy email accounts since this is required upon registration, please take a note on this</string>
+    <string name="write_here">Write here...</string>
+    <string name="confirm_reservation">Confirm reservation</string>
+    <string name="add_reservation">Add reservation</string>
+    <string name="notes">Extra Notes : </string>
+    <string name="address">Address</string>
+    <string name="cancel_reservation">Cancel reservation</string>
+    <string name="decline_reservation">Decline reservation</string>
+    <string name="all">All</string>
+    <string name="wrong_info">Wrong info</string>
+    <string name="we_are_over_booked">We are over booked</string>
+    <string name="we_are_close">We are close</string>
+    <string name="currency">€%1$s</string>
+    <string name="no_favourites_yet">No favorites yet!</string>
+    <string name="payment_method">Payment method</string>
+    <string name="summary">Summary</string>
+    <string name="download">Download</string>
+    <string name="view_in_browser">View in browser</string>
+    <string name="you_have_no_nactive_package">You have no\nactive package</string>
+    <string name="active_package">Active package</string>
+    <string name="renew">Renew</string>
+    <string name="next_renewal_on">Next renewal on</string>
+    <string name="available_packages">Available packages</string>
+    <string name="buy_now">Buy now</string>
+    <string name="use_coupons">Use Coupons</string>
+    <string name="select_payment_method">Select payment method</string>
+    <string name="proceed_to_pay">Proceed to pay</string>
+    <string name="select_date_range_first">Select dates range first</string>
+    <string name="select_from_date_first">Select from date first</string>
+    <string name="select_to_date_first">Select to date first</string>
+    <string name="i_accept_terms_and_conditions"><u>I Accept terms and conditions…</u></string>
+    <string name="enter_coupon_code">Enter coupon code</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="i_accept_terms_condition">I accept terms and conditions</string>
+    <string name="create_event">Create event</string>
+    <string name="event_title">Event title</string>
+    <string name="enter_event_title">Enter event title</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="add_image">Add image</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter description...</string>
+    <string name="apply_dates">Apply dates</string>
+    <string name="select_dates">Select dates</string>
+    <string name="discount">Discount</string>
+    <string name="package_detail">Package detail</string>
+    <string name="order_detail">Order detail</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="remember_me">Remember me</string>
+    <string name="host_account">Host account</string>
+    <string name="business">Business</string>
+    <string name="offer_expires_in">Offer expires in</string>
+    <string name="days">days</string>
+    <string name="active">Active</string>
+    <string name="months">Months</string>
+    <string name="off">OFF</string>
+    <string name="create">Create</string>
+
+    <string name="bottom_home">Home</string>
+    <string name="bottom_reservation">Reservation</string>
+    <string name="bottom_notification">Notification</string>
+    <string name="bottom_profile">Profile</string>
+    <string name="bottom_event">Event</string>
+    <string name="bottom_more">More</string>
+
+    <string name="profile_allow_notification">Allow notifications</string>
+    <string name="my_reservation">My reservations</string>
+    <string name="your_reservation">Your reservation</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="all_notifications">All Notifications</string>
+    <string name="select_date">Select date</string>
+
+    <string name="total_no_of_people">Total no of people : </string>
+    <string name="arrived">ARRIVED</string>
+    <string name="status">STATUS</string>
+    <string name="name">NAME</string>
+    <string name="reservation_no">RESERVATION NO.</string>
+    <string name="mobile_no">MOBILE NO.</string>
+    <string name="no_of_people_cap">NO OF PEOPLE</string>
+    <string name="date_time"><![CDATA[DATE & TIME]]></string>
+    <string name="table_no">TABLE NO</string>
+    <string name="indoors_outdoors">INDOORS/OUTDOORS</string>
+    <string name="age">AGE</string>
+    <string name="extra_notes_cap">EXTRA NOTES</string>
+
+    <string name="age_group">Age group</string>
+    <string name="table_no_small">Table no</string>
+    <string name="edit">Edit</string>
+    <string name="make_it_as_default_location">Make it as default location</string>
+    <string name="shift_one">Shift One</string>
+    <string name="shift_two">Shift Two</string>
+
+    <string name="use_gps_location">Use GPS Location</string>
+    <string name="add_address_manually">Add Address Manually</string>
+    <string name="table">Table</string>
+    <string name="save_location">Save location</string>
+    <string name="save_city">Select city</string>
+    <string name="select_a_topic">Select a topic</string>
+    <string name="mark_all_as_read">Mark all as read</string>
+    <string name="new_notifications">New notifications</string>
+
+    <string name="confirmation_pending">Confirmation Pending</string>
+
+
+    <string name="msg_internet_conn">Please check your internet connection</string>
+    <string name="msg_name">Enter your full name</string>
+    <string name="msg_name_valid">Enter your full name</string>
+    <string name="msg_name_valid_sub">Enter your name.</string>
+    <string name="msg_company">Enter your business name</string>
+    <string name="msg_company_valid">Enter your business name</string>
+    <string name="msg_telephone">Enter your telephone</string>
+    <string name="msg_telephone_valid">Enter your valid telephone</string>
+    <string name="msg_mobile">Enter your mobile</string>
+    <string name="msg_mobile_valid">Enter your valid mobile</string>
+    <string name="msg_email">Enter your email</string>
+    <string name="msg_email_sub">Please enter your email address.</string>
+    <string name="msg_email_valid">Enter your valid email.</string>
+    <string name="msg_fax">Enter your fax</string>
+    <string name="msg_fax_valid">The fax must be at least 8 characters.</string>
+    <string name="msg_pass">Enter your password</string>
+    <string name="msg_pass_sub">Please enter your password.</string>
+    <string name="msg_pass_valid">Enter your valid password with 6 minimum character length</string>
+    <string name="msg_pass_valid_char">Please add minimum 6 characters which include one upper/lower case/ special character and one digit.</string>
+    <string name="msg_industry">One category must be selected</string>
+    <string name="msg_tags">ne tag must be selected</string>
+    <string name="msg_industry_valid">Select your category Min 1 and Max 3 selection</string>
+    <string name="msg_tag_valid">Select your tag Min 1 and Max 5 selection</string>
+
+
+    <string name="remove_confirmation">Remove confirmation</string>
+    <string name="remove_coupon">Are you sure you want to\nremove this coupon?</string>
+    <string name="preferred_payment_method">Select your preferred payment method</string>
+    <string name="accept_terms_and_conditions">Accept terms and conditions first</string>
+    <string name="confirm_payment">Confirm payment</string>
+    <string name="proceed_to_payment">Are you sure you want proceed to payment?</string>
+    <string name="remove">Remove</string>
+    <string name="proceed">Proceed</string>
+    <string name="download_confirmation">Download confirmation</string>
+    <string name="download_invoice">"Are you sure you want\nto download invoice?"</string>
+    <string name="sure_log_out">Are you sure you want\nto logout?</string>
+    <string name="delete_photo">Delete photo</string>
+    <string name="sure_delete_photo">Are you sure you want to delete\nthis photo?</string>
+    <string name="update">Update</string>
+    <string name="available_update">Application update is available. please update your application.</string>
+    <string name="not_now">Not now</string>
+    <string name="select_language">Select Language</string>
+
+
+    <string name="select_topic_first">Select topic first</string>
+    <string name="search_by_reservation_no_and_phone">Please search by reservation no. and mob no.</string>
+    <string name="search_about_restaurant_club_bar">Please search about restaurant, club, bar...</string>
+    <string name="search_by_reservation_no_and_phone_amp">Search by reservation ![CDATA[no. &amp; mob.]] no.</string>
+    <string name="restaurant_club_bar">Restaurant, Club, Bar...</string>
+    <string name="people">People</string>
+    <string name="delete_location">Delete Location</string>
+
+
+    <string name="enter_old_password">Enter your old password</string>
+    <string name="enter_new_password">Enter your new password</string>
+    <string name="password_validation">Please add minimum 6 characters which include one upper/lower case/ special character and one digit</string>
+    <string name="enter_confirm_password">Enter confirm password</string>
+    <string name="confirm_password_not_match">The password and confirm password must match</string>
+
+    <string name="login_confirmation">Login confirmation</string>
+    <string name="login_confirmation_text">Login required to access\nthis feature.</string>
+    <string name="login">Login</string>
+    <string name="delete_user">Are you sure you want to delete\nthis user?</string>
+    <string name="enter_mobile_number">Enter your mobile number</string>
+
+    <string name="enter_message">Enter your message</string>
+    <string name="enter_table_type">Enter your table type</string>
+    <string name="enter_event_description">Enter your event description</string>
+    <string name="enter_address">Enter your address</string>
+    <string name="enter_address_validation">The address must be at least 3 characters.</string>
+    <string name="enter_area">Enter your area</string>
+    <string name="select_your_city">Select your city</string>
+    <string name="enter_postal_code">Enter your postal code</string>
+    <string name="enter_latitude">Enter latitude</string>
+    <string name="enter_longitude">Enter longitude</string>
+    <string name="location_not_enabled">Location not enabled, user cancelled.</string>
+    <string name="select_restaurant_location">Select restaurant location</string>
+
+    <string name="select_age_group">Select age group</string>
+    <string name="select_reservation_date">Select your reservation date</string>
+    <string name="select_reservation_time">Select your reservation time</string>
+    <string name="enter_table_number">Enter table number</string>
+    <string name="select_month">Select month</string>
+    <string name="use_another_image">Something went wrong, please try again or use another image</string>
+
+    <string name="area">Area</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="postal_code">Postal code</string>
+    <string name="select">Select</string>
+
+    <string name="cancel_subscription">Cancel subscription</string>
+    <string name="cancel_subscription_text">Are you sure you want to cancel this subscription?</string>
+    <string name="payment">Payment</string>
+    <string name="payment_failed">Payment Failed Please Try Again!!</string>
+
+    <string name="choose_one">Choose one</string>
+    <string name="select_one_for_profile">Please select one for profile image</string>
+    <string name="enter_dob">Enter your date of birth</string>
+    <string name="camera">Camera</string>
+    <string name="search_has_been_saved">Your search has been saved</string>
+
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <string name="download_complete_path">Download completed\nLocation:</string>
+
+
+    <string name="calendar_sunday">Sun</string>
+    <string name="calendar_monday">Mon</string>
+    <string name="calendar_tuesday">Tue</string>
+    <string name="calendar_wednesday">Wed</string>
+    <string name="calendar_thursday">Thu</string>
+    <string name="calendar_friday">Fri</string>
+    <string name="calendar_saturday">Sat</string>
+
+    <string name="close">Close</string>
+    <string name="open_at">Open at </string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+    <string name="close_at">Close at </string>
+
+
+    <string name="reservation_no_small">Reservation no. : </string>
+    <string name="not_available">Not available</string>
+    <string name="reservation_all_text">Congratulations! Your reservation\nhas been confirmed. Thank you!</string>
+    <string name="reservation_cancel_text">Your reservation has been\ncancelled</string>
+    <string name="reservation_declined_text">Your reservation has been declined</string>
+    <string name="reservation_pending_text">Your reservation is pending for\napproval</string>
+
+    <string name="edit_event">Edit event</string>
+    <string name="update_event">Update event</string>
+
+
+    <string name="calendar_jan">Jan</string>
+    <string name="calendar_Feb">Feb</string>
+    <string name="calendar_Mar">Mar</string>
+    <string name="calendar_Apr">Apr</string>
+    <string name="calendar_May">May</string>
+    <string name="calendar_Jun">Jun</string>
+    <string name="calendar_Jul">Jul</string>
+    <string name="calendar_Aug">Aug</string>
+    <string name="calendar_Sep">Sep</string>
+    <string name="calendar_Oct">Oct</string>
+    <string name="calendar_Nov">Nov</string>
+    <string name="calendar_Dec">Dec</string>
+
+    <string name="event_title_validation">Enter your event title</string>
+    <string name="event_date_validation">Please select event date</string>
+    <string name="event_start_end_time_validation">Select your event start and end time</string>
+    <string name="event_time_validation">Please select end time</string>
+    <string name="event_location_validation">Please select location</string>
+    <string name="event_image_validation">Please select your event image</string>
+    <string name="date_validation">Please select date at first</string>
+
+    <string name="hi_guest">Hi! Guest</string>
+
+</resources>

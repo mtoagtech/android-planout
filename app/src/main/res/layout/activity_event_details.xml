@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.EventDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imgCoverPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_250"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_img"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/imgCoverPhotoClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70"
+        android:src="@drawable/bg_blur_black_white_drawable"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCoverPhoto"/>
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icon_back"
+        app:tint="@color/white"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_35"
+        android:padding="@dimen/margin_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icon_fav_day_night"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_35"
+        android:padding="@dimen/margin_5"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:layout_marginTop="@dimen/margin_10"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dataAria"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/contMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_100"
+                    android:paddingBottom="@dimen/margin_30"
+                    android:layout_marginBottom="@dimen/margin_30"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:background="@drawable/bg_round_edit_drawable"
+                    android:backgroundTint="@color/gray_FF_14"
+                    android:elevation="@dimen/margin_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:outlineSpotShadowColor="@color/gray_B2_5B"
+                    android:outlineAmbientShadowColor="@color/gray_B2_5B"
+                    app:layout_constraintTop_toTopOf="@+id/constHead">
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/bold_helvetica_18dp"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:text="Ravens music hall limassol"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="@dimen/margin_70" />
+
+                    <TextView
+                        android:id="@+id/txtSubTitle"
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_14dp"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:textColor="@color/gray_5B"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:text="Wed, 20 Apr, 9-11 pm"
+                        android:drawableStart="@drawable/ic_icon_date_time"
+                        app:drawableTint="@color/app_green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                        android:layout_marginTop="@dimen/margin_15" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1"
+                        android:background="@color/gray_E7_48"
+                        app:layout_constraintTop_toBottomOf="@+id/txtSubTitle"
+                        android:layout_marginTop="@dimen/margin_30"/>
+
+                    <ImageView
+                        android:id="@+id/imgAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_icon_address"
+                        app:tint="@color/app_green"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:layout_marginStart="@dimen/margin_15"/>
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:includeFontPadding="false"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_14dp"
+                        android:textColor="@color/gray_5B"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_marginEnd="@dimen/margin_15"
+                        android:text="Wed, 20 Apr, 9-11 pm"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgAddress"
+                        app:layout_constraintTop_toTopOf="@+id/imgAddress"
+                        android:layout_marginTop="@dimen/margin_1" />
+
+                    <TextView
+                        android:id="@+id/txtDesc"
+                        android:includeFontPadding="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/regular_helvetica_14dp"
+                        android:textColor="@color/gray_5B"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:text="Nicosia, Cyprus"
+                        android:visibility="invisible"
+                        app:drawableTint="@color/gray_5B"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtAddress"
+                        android:layout_marginTop="@dimen/margin_20" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    app:civ_border_color="@color/gray_FF_14"
+                    app:civ_border_width="@dimen/margin_2"
+                    android:elevation="@dimen/margin_5"
+                    android:src="@drawable/placeholder_img"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/contMain"
+                    app:layout_constraintBottom_toTopOf="@+id/contMain"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

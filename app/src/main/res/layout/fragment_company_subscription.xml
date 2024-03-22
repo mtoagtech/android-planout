@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F7_33"
+    tools:context=".fragments.CompanySubscriptionFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_200"
+        android:background="@color/app_green"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSubTop"
+        app:layout_constraintBottom_toTopOf="@+id/cardSubTop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/bold_helvetica_18dp"
+        android:layout_width="@dimen/margin_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_40"
+        android:gravity="center"
+        android:text="@string/subscription"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:src="@drawable/ic_home_noti"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtTitle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSubTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_30"
+        app:cardCornerRadius="@dimen/margin_4"
+        app:cardElevation="@dimen/margin_5"
+        android:outlineAmbientShadowColor="@color/gray_B2_5B"
+        android:outlineSpotShadowColor="@color/gray_B2_5B"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_FF_14">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constNoSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_FF_14"
+                android:paddingHorizontal="@dimen/margin_40"
+                android:paddingVertical="@dimen/margin_30"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_icon_subscription_no"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_20"
+                    android:gravity="center"
+                    android:text="@string/you_have_no_nactive_package"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgNo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgNo"
+                    app:layout_constraintTop_toTopOf="@+id/imgNo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constSubscription"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:paddingVertical="@dimen/margin_20"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_FF_14"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/activePack"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_20"
+                    android:gravity="center"
+                    android:text="@string/active_package"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/activePackMonth"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:gravity="center"
+                    android:text="3 Months"
+                    android:textColor="@color/app_green"
+                    android:textSize="@dimen/margin_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/activePack" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/margin_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnRenew"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btnRenew">
+
+                    <TextView
+                        android:id="@+id/activeDateTitle"
+                        style="@style/regular_helvetica_12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/next_renewal_on"
+                        android:textColor="@color/gray_5B"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/activeDateVal"
+                        style="@style/bold_helvetica_14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="16 Aug 2022"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnRenew"
+                    style="@style/bold_helvetica_14dp"
+                    android:layout_width="@dimen/margin_120"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:background="@drawable/bg_round_btn_green_drawable"
+                    android:paddingHorizontal="@dimen/margin_20"
+                    android:paddingVertical="@dimen/margin_18"
+                    android:text="@string/renew"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/activePackMonth" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/availPackages"
+        style="@style/bold_helvetica_14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/available_packages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardSubTop" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAvailPackages"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0"
+        android:layout_marginTop="@dimen/margin_2"
+        android:paddingVertical="@dimen/margin_10"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availPackages" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

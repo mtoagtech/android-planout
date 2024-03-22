@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WalkthroughActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_below="@+id/viewPager"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/margin_100"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/img_slider_shadow"
+        android:paddingTop="@dimen/margin_60">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discover_delicious"
+            style="@style/bold_helvetica_24dp_light"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_50"
+            app:layout_constraintBottom_toTopOf="@+id/txtSubTitle"/>
+
+        <TextView
+            android:id="@+id/txtSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Blandit aliquam etiam erat velit\nscelerisque in."
+            style="@style/regular_helvetica_14dp_light"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_40"
+            app:layout_constraintBottom_toTopOf="@+id/linView"/>
+
+        <LinearLayout
+            android:id="@+id/linView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/margin_50"
+            app:layout_constraintBottom_toTopOf="@+id/linBtn">
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/margin_15"
+                android:layout_height="@dimen/margin_4"
+                android:background="@color/white"/>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/margin_15"
+                android:layout_height="@dimen/margin_4"
+                android:background="@color/gray_3D"/>
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/margin_15"
+                android:layout_height="@dimen/margin_4"
+                android:background="@color/gray_3D"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/txtGuest"
+            android:layout_marginBottom="@dimen/margin_20">
+
+            <TextView
+                android:id="@+id/txtBtnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in2"
+                style="@style/bold_helvetica_14dp"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_round_btn_drawable"
+                android:gravity="center"
+                android:layout_weight="1"
+                app:backgroundTint="@color/white"
+                android:padding="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_15"
+                android:layout_marginEnd="@dimen/margin_7"/>
+            <TextView
+                android:id="@+id/txtBtnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                style="@style/bold_helvetica_14dp_light"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_btn_drawable"
+                android:gravity="center"
+                app:backgroundTint="@color/app_green"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_7"
+                android:layout_marginEnd="@dimen/margin_15"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_as_guest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/margin_40"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/white"
+            style="@style/bold_helvetica_14dp_light"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

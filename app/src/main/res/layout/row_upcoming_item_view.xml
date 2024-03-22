@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/margin_320"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginVertical="@dimen/margin_10"
+        android:elevation="@dimen/margin_5"
+        android:outlineAmbientShadowColor="@color/gray_B2_5B"
+        android:outlineSpotShadowColor="@color/gray_B2_5B"
+        android:background="@drawable/bg_round_white_drawable"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="@dimen/margin_4">
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_250"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSmall"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            app:cardCornerRadius="@dimen/margin_4"
+            app:layout_constraintTop_toTopOf="@+id/cardBig"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/margin_10">
+            <ImageView
+                android:id="@+id/storeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_demo11"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/bottomAria"
+            android:paddingTop="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="@dimen/margin_2"
+            android:background="@drawable/bg_gradient_trans_black_drawable"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/bold_helvetica_14dp"
+                android:textColor="@color/white"
+                android:text="Musical night"
+                android:singleLine="true"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/cardBig"
+                android:layout_marginTop="@dimen/margin_10"/>
+
+            <TextView
+                android:id="@+id/txtSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textColor="@color/white"
+                android:maxLines="2"
+                android:text="Ravens music hall limassol"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/cardBig"
+                android:layout_marginTop="@dimen/margin_7"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_7"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/gray_B2"
+                    app:layout_constraintTop_toTopOf="@id/txtAddress"
+                    app:layout_constraintBottom_toBottomOf="@id/txtAddress"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/locIcon"
+                    app:tint="@color/gray_B2"
+                    android:src="@drawable/ic_icon_address"/>
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regular_helvetica_14dp"
+                    android:textSize="@dimen/margin_13"
+                    android:singleLine="true"
+                    android:paddingTop="@dimen/margin_2"
+                    app:layout_constraintStart_toEndOf="@id/locIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="@dimen/margin_5"
+                    android:text="NIce boutique suites hotel, ayia"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray_B2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1"
+                android:background="@color/gray_27"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginHorizontal="@dimen/margin_15"/>
+
+            <TextView
+                android:id="@+id/txtDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/regular_helvetica_14dp"
+                android:textColor="@color/white"
+                android:text="Wed, 20 Apr, 9-11 pm"
+                android:drawableStart="@drawable/ic_icon_date_time"
+                app:drawableTint="@color/white"
+                android:drawablePadding="@dimen/margin_5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/margin_15"
+                app:layout_constraintTop_toBottomOf="@+id/cardBig"
+                android:layout_marginVertical="@dimen/margin_10"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

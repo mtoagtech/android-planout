@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files" path="."/>
+    <external-files-path
+        name="my_images"
+        path="Android/data/com.planout/files/Pictures" />
+    <cache-path
+        name="image"
+        path="/data/data/user/0/com.planout/cache/" />
+    <cache-path
+        name="image"
+        path="image/" />
+    <cache-path
+        name="image"
+        path="." />
+    <external-cache-path
+        name="name"
+        path="." />
+    <external-cache-path
+        name="name"
+        path="/data/data/user/0/com.planout/cache/" />
+    <external-path name="my_images" path="Android/data/com.example.captureimage/files/Pictures" />
+    <external-path
+        name="external_files"
+        path="." />
+
+    <external-cache-path
+        name="external-cache-path"
+        path="." />
+    <external-files-path
+        name="external-files-path"
+        path="." />
+    <files-path
+        name="files_path"
+        path="." />
+    <cache-path
+        name="cache-path"
+        path="." />
+    <root-path
+        name="name"
+        path="." />
+
+    <external-path
+        name="external_files"
+        path="." />
+    <external-path
+        name="external_files"
+        path=".Download" />
+    <external-path
+        name="external_files"
+        path=".Pictures" />
+    <external-cache-path
+        name="external_cache_files"
+        path="." />
+    <external-files-path
+        name="external_files_files"
+        path="." />
+    <external-path
+        name="Download"
+        path="Download/" />
+    <files-path
+        name="my_images"
+        path="Android/data/com.planout/files/Pictures" />
+    <files-path
+        name="files"
+        path="." />
+    <external-files-path
+        name="external_files_path"
+        path="." />
+    <external-files-path
+        name="external_files_path"
+        path="/DCIM" />
+    <external-files-path
+        name="external_files_path"
+        path="/Pictures" />
+    <external-path
+        name="external_files_path"
+        path="/Pictures" />
+
+    <!--file:///data/user/0/com.you_zap_me/cache/cropped2767216224491226003.jpg-->
+</paths>

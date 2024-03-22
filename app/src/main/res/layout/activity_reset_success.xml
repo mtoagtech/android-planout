@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".activities.ResetSuccessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reset_success"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/success"
+            style="@style/bold_helvetica_20dp"
+            android:gravity="center"
+            android:textColor="@color/app_green"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_50"/>
+
+        <TextView
+            android:id="@+id/txtSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_password_has_been_nreset_successfully"
+            style="@style/regular_helvetica_14dp"
+            android:textSize="@dimen/margin_13"
+            android:gravity="center"
+            android:textColor="@color/gray_5B"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_15"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle"/>
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/bold_helvetica_14dp_light"
+            android:textColor="@color/white"
+            android:text="GotIt"
+            android:paddingHorizontal="@dimen/margin_60"
+            android:background="@drawable/bg_round_btn_drawable"
+            app:backgroundTint="@color/app_green"
+            android:paddingVertical="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_60"
+            android:layout_marginBottom="@dimen/margin_10"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
